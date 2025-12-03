@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>자유의 여신상 여행기 - 세계 랜드마크 블로그</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      background: linear-gradient(120deg, #4f46e5, #06b6d4);
+      color: #fff;
+      padding: 1.8rem 1.5rem 1.3rem;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
+      margin-bottom: 1.5rem;
+    }
+    .header-inner {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .site-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .breadcrumb {
+      margin-top: 0.45rem;
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+    .breadcrumb a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem 2rem;
+    }
+
+    .hero {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      margin-bottom: 1.8rem;
+    }
+    .hero-image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56%;
+      overflow: hidden;
+    }
+    .hero-image img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      inset: 0;
+      filter: saturate(1.1);
+    }
+    .hero-body {
+      padding: 1.2rem 1.4rem 1.4rem;
+    }
+    .hero-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .hero-meta {
+      font-size: 0.88rem;
+      color: #6b7280;
+    }
+
+    article {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.4rem 1.5rem 1.6rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
+    article h2 {
+      font-size: 1.25rem;
+      margin: 1.3rem 0 0.4rem;
+    }
+    article h2:first-of-type {
+      margin-top: 0;
+    }
+
+    article p {
+      font-size: 0.96rem;
+      color: #374151;
+      margin-bottom: 0.75rem;
+    }
+
+    .tip-box {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-radius: 12px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      font-size: 0.9rem;
+      color: #1f2937;
+    }
+    .tip-box strong { display: block; margin-bottom: 0.2rem; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1.4rem;
+      font-size: 0.9rem;
+      color: #4f46e5;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem 1.5rem 2rem;
+      background: #f9fafb;
+      font-size: 0.84rem;
+      color: #6b7280;
+      margin-top: 1.5rem;
+    }
+    .footer-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 1.4rem 1.1rem 1rem; }
+      main { padding: 0 1.1rem 2rem; }
+      .hero-body { padding: 1rem 1.1rem 1.2rem; }
+      article { padding: 1.1rem 1.1rem 1.3rem; }
+      .hero-title { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="site-title">세계 랜드마크 기록 블로그</div>
+      <div class="breadcrumb">
+        <a href="index.html">홈</a> ·
+        <a href="index.html#north-america">북미</a> ·
+        자유의 여신상 여행기
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 대표 이미지 + 제목 -->
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1568737110552-fc872a889af8?auto=format&fit=crop&w=1400&q=80"
+             alt="뉴욕 자유의 여신상 전경" />
+      </div>
+      <div class="hero-body">
+        <h1 class="hero-title">뉴욕 자유의 여신상, 배를 타고 다가가 본 첫인상</h1>
+        <div class="hero-meta">
+          미국 · 뉴욕 · Statue of Liberty<br />
+          작성일: 2025-12-03 · 태그: 뉴욕, 미국여행, 랜드마크
+        </div>
+      </div>
+    </section>
+
+    <!-- 블로그 본문 -->
+    <article>
+      <h2>1. 영화 속 장면이 현실로 나타나는 순간</h2>
+      <p>
+        뉴욕 자유의 여신상은 너무 많이 봐서 오히려 새로울 게 없을 줄 알았는데,
+        맨해튼을 떠나 배를 타고 조금씩 다가갈수록 생각보다 훨씬 거대하고 묵직한 느낌이었습니다.
+        멀리서 볼 땐 그냥 ‘상징물’처럼 느껴지다가, 가까이 가면 진짜로 <strong>한 도시를 지키는 수호자</strong> 같아요.
+      </p>
+      <p>
+        특히 섬에 가까워질수록 사람들 표정이 하나씩 바뀌는 게 인상적이었어요.
+        시끄럽게 떠들던 사람들도 어느 순간 조용해지고, 다들 카메라를 내리고 눈으로 한 번 더 보는 느낌이었달까.
+      </p>
+
+      <h2>2. 배를 타고 가는 과정부터 여행의 일부</h2>
+      <p>
+        자유의 여신상은 그냥 ‘앞에서 보는 조형물’이 아니라,
+        <strong>배를 타고 왕복해야 한다</strong>는 점에서 이미 작은 크루즈 여행 같은 기분을 줍니다.
+        맨해튼 남쪽 배터리 파크 근처에서 티켓을 끊고, 보안 검사를 통과한 뒤 배에 오르면
+        뉴욕 스카이라인이 점점 멀어지면서 다른 도시를 향해 떠나는 기분이 들어요.
+      </p>
+      <p>
+        날씨가 좋다면 2층 야외 데크에 서서 바람 맞으면서 가는 걸 추천합니다.
+        한쪽에는 맨해튼의 빽빽한 빌딩 숲, 다른 한쪽에는 점점 커지는 자유의 여신상이 동시에 보이거든요.
+        사진을 찍기에도, 그냥 멍하니 서 있기에도 둘 다 좋은 시간입니다.
+      </p>
+
+      <div class="tip-box">
+        <strong>TIP · 티켓 예매와 시간대 선택</strong>
+        자유의 여신상 방문은 사람 정말 많아요. 특히 성수기에는 오전 일찍 타임대를 미리 예매해 두는 걸 추천합니다.
+        너무 늦은 시간에 가면 섬에서 충분히 머물 시간이 줄어들 수 있어요.
+      </div>
+
+      <h2>3. 섬에 내려서 바라본 여신상의 디테일</h2>
+      <p>
+        막상 섬에 내려서 동상 근처까지 걸어가면, 우리가 사진으로 보던 각도와는 전혀 다른 디테일들이 보입니다.
+        구리로 덮인 표면의 색감, 옷 주름처럼 표현된 판넬, 토치(횃불) 부분의 구조 등
+        멀리서 볼 땐 알 수 없던 부분들이 하나씩 눈에 들어와요.
+      </p>
+      <p>
+        정면에서만 보는 것보다, 살짝 옆이나 뒤쪽까지 돌아가 보기를 추천합니다.
+        여신상이 어느 방향을 바라보고 있는지, 섬 주변에서 보이는 바다와 도시의 구도가 조금씩 달라지는 걸 느끼다 보면,
+        ‘사진 한 장 찍고 끝’이 아니라 <strong>공간 전체를 경험하는 기분</strong>이 들 거예요.
+      </p>
+
+      <h2>4. 맨해튼을 향해 돌아가는 길, 마지막 한 번 더</h2>
+      <p>
+        돌아오는 배에서는 자연스럽게 여신상을 등지고 맨해튼을 바라보게 됩니다.
+        그런데 배가 섬을 떠나 멀어질 때, 사람들이 한 번 더 뒤를 돌아보는 장면이 꼭 나오더라고요.
+        뉴욕이라는 도시를 맞이하는 관문 같은 느낌이 남아서 그런 것 같아요.
+      </p>
+      <p>
+        개인적으로는, 밤보다는 <strong>맑은 낮 시간대</strong>에 가는 걸 더 좋아합니다.
+        하늘 색과 바다, 도시, 그리고 여신상의 색이 제일 잘 어울리는 시간이기 때문이에요.
+      </p>
+
+      <div class="tip-box">
+        <strong>정리 · 이런 사람에게 추천</strong>
+        뉴욕에 처음 가는 사람이라면 한 번쯤은 꼭 가볼 만한 곳입니다.
+        ‘관광지 같다’는 이유로 건너뛰기엔, 실제로 섬에 서서 도시를 바라보는 경험이 꽤 특별해요.
+        다만, 동선이 제법 길고 보안 검사도 있어서 반나절 정도는 여유 있게 잡는 걸 추천합니다.
+      </div>
+
+      <a class="back-link" href="index.html#north-america">
+        ← 북미 랜드마크 목록으로 돌아가기
+      </a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2025 World Landmarks Travel Blog</span>
+      <span>작성자: (여기에 닉네임)</span>
+    </div>
+  </footer>
+</body>
+</html>

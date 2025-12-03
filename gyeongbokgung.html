@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>경복궁 여행기 - 세계 랜드마크 블로그</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+      line-height: 1.7;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      background: linear-gradient(120deg, #4f46e5, #06b6d4);
+      color: #fff;
+      padding: 1.8rem 1.5rem 1.3rem;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
+      margin-bottom: 1.5rem;
+    }
+    .header-inner { max-width: 920px; margin: 0 auto; }
+    .site-title { font-size: 1.4rem; font-weight: 700; }
+    .breadcrumb {
+      margin-top: 0.45rem;
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+    .breadcrumb a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem 2rem;
+    }
+
+    .hero {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      margin-bottom: 1.8rem;
+    }
+    .hero-image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56%;
+      overflow: hidden;
+    }
+    .hero-image img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      inset: 0;
+      filter: saturate(1.05);
+    }
+    .hero-body { padding: 1.2rem 1.4rem 1.4rem; }
+    .hero-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .hero-meta {
+      font-size: 0.88rem;
+      color: #6b7280;
+    }
+
+    article {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.4rem 1.5rem 1.6rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+
+    article h2 {
+      font-size: 1.25rem;
+      margin: 1.3rem 0 0.4rem;
+    }
+    article h2:first-of-type { margin-top: 0; }
+
+    article p {
+      font-size: 0.96rem;
+      color: #374151;
+      margin-bottom: 0.75rem;
+    }
+
+    .tip-box {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-radius: 12px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      font-size: 0.9rem;
+      color: #1f2937;
+    }
+    .tip-box strong { display: block; margin-bottom: 0.2rem; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1.4rem;
+      font-size: 0.9rem;
+      color: #4f46e5;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem 1.5rem 2rem;
+      background: #f9fafb;
+      font-size: 0.84rem;
+      color: #6b7280;
+      margin-top: 1.5rem;
+    }
+    .footer-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="site-title">세계 랜드마크 기록 블로그</div>
+      <div class="breadcrumb">
+        <a href="index.html">홈</a> ·
+        <a href="index.html#asia">아시아</a> ·
+        경복궁 여행기
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1570238935375-0cce4a9d2750?auto=format&fit=crop&w=1400&q=80"
+             alt="서울 경복궁 전경" />
+      </div>
+      <div class="hero-body">
+        <h1 class="hero-title">경복궁, 서울 도심 속 조선의 심장</h1>
+        <div class="hero-meta">
+          대한민국 · 서울 · Gyeongbokgung Palace<br />
+          작성일: 2025-12-03 · 태그: 서울, 한국여행, 고궁
+        </div>
+      </div>
+    </section>
+
+    <article>
+      <h2>1. 광화문을 지나 안으로 들어서다</h2>
+      <p>
+        경복궁은 지하철에서 내려 몇 분만 걸으면 도착할 수 있는 곳인데,
+        광화문을 지나 안으로 들어서는 순간, 갑자기 시간이 몇 백 년은 뒤로 밀려난 느낌이 납니다.
+        뒤로는 북악산이 든든하게 서 있고, 앞에는 넓게 열린 마당과 정갈한 건물들이 이어져요.
+      </p>
+
+      <p>
+        특히 맑은 날에 푸른 하늘 아래서 보는 근정전은
+        “서울에 이런 공간이 있었나?” 싶은 생각이 들 정도로 고요합니다.
+      </p>
+
+      <h2>2. 근정전과 경회루, 두 개의 하이라이트</h2>
+      <p>
+        경복궁 안에서 가장 인상적인 공간을 꼽으라면
+        <strong>근정전</strong>과 <strong>경회루</strong>를 빼놓을 수 없습니다.
+      </p>
+      <p>
+        근정전은 왕이 공식적인 행사를 치르던 정전으로,
+        계단을 하나씩 올라가면서 자연스럽게 허리가 펴지는 느낌이 들어요.
+        경회루는 연못 위에 떠 있는 누각처럼 보이는 곳으로,
+        물에 비친 모습까지 함께 보는 재미가 있습니다.
+      </p>
+
+      <div class="tip-box">
+        <strong>TIP · 사진 찍기 좋은 시간</strong>
+        ✔ 오전: 광화문·근정전 앞쪽 역광 적어서 선명한 사진<br />
+        ✔ 오후: 경회루와 연못에 비치는 따뜻한 햇살이 예쁨
+      </div>
+
+      <h2>3. 한복 대여하고 걷는 경복궁</h2>
+      <p>
+        경복궁 주변에는 한복 대여점이 많아서,
+        실제로 한복을 입고 궁 안을 걷는 사람들을 쉽게 볼 수 있습니다.
+        한복을 입으면 입장료가 무료인 것도 꽤 큰 장점!
+      </p>
+
+      <p>
+        한복을 입고 근정전 앞에서 사진을 찍거나,
+        회랑을 따라 천천히 걷다 보면
+        그냥 ‘관광’을 하는 게 아니라
+        <strong>잠깐 조선 시대로 여행을 온 느낌</strong>이 들어요.
+      </p>
+
+      <h2>4. 사계절이 모두 어울리는 고궁</h2>
+      <p>
+        봄에는 벚꽃과 연분홍 꽃들이 피어나고,
+        여름에는 푸른 잔디와 나무들이 눈을 시원하게 해 줍니다.
+        가을에는 단풍이 기와와 함께 어울려서 붉은 색감이 살아나고,
+        겨울에는 눈 쌓인 기와지붕이 흑백 사진 같은 분위기를 만들어 줘요.
+      </p>
+
+      <p>
+        경복궁은 어느 계절에 가도 손해 보는 시기가 없는,
+        그야말로 사계절 랜드마크입니다.
+      </p>
+
+      <a class="back-link" href="index.html#asia">
+        ← 아시아 랜드마크 목록으로 돌아가기
+      </a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2025 World Landmarks Travel Blog</span>
+      <span>작성자: (닉네임)</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>세계 랜드마크 여행 블로그</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: #f5f5f7;
+      color: #222;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: linear-gradient(120deg, #4f46e5, #06b6d4);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-inner { max-width: 1080px; margin: 0 auto; }
+    .site-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.4rem;
+    }
+    .site-subtitle {
+      font-size: 0.98rem;
+      opacity: 0.9;
+      margin-bottom: 1rem;
+    }
+    nav { margin-top: 0.4rem; }
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+    .nav-links a {
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.18);
+      transition: background 0.2s, transform 0.1s;
+    }
+    .nav-links a:hover {
+      background: rgba(15, 23, 42, 0.32);
+      transform: translateY(-1px);
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 1.8rem auto 3rem;
+      padding: 0 1.5rem 2rem;
+    }
+    .intro {
+      margin-bottom: 2rem;
+      padding: 1.25rem 1.25rem 1.5rem;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+    .intro h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .intro p { font-size: 0.96rem; color: #4b5563; }
+
+    section.continent { margin-bottom: 2.5rem; }
+    .continent-header {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .continent-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: #e5e7eb;
+      color: #374151;
+      width: fit-content;
+    }
+    .continent-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #111827;
+    }
+    .continent-desc {
+      font-size: 0.92rem;
+      color: #4b5563;
+      max-width: 640px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.35rem;
+      margin-top: 0.9rem;
+    }
+
+    .landmark-link {
+      display: block;
+    }
+
+    .landmark-card {
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.1);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+    }
+    .landmark-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+    }
+
+    .landmark-image-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 60%;
+      overflow: hidden;
+    }
+    .landmark-image-wrapper img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      inset: 0;
+      transition: transform 0.4s ease-out;
+    }
+    .landmark-card:hover img { transform: scale(1.05); }
+
+    .landmark-body {
+      padding: 0.95rem 1rem 1.05rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .landmark-name {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #111827;
+    }
+    .landmark-location {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    .landmark-desc {
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+    .landmark-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.78rem;
+      background: #eef2ff;
+      color: #4f46e5;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      margin-top: 0.15rem;
+      width: fit-content;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem 1.5rem 2rem;
+      background: #f9fafb;
+    }
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      font-size: 0.84rem;
+      color: #6b7280;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 1.6rem 1.1rem 1.4rem; }
+      main { padding: 0 1.1rem 2rem; }
+      .intro { padding: 1rem 1rem 1.25rem; }
+      .site-title { font-size: 1.5rem; }
+      .continent-title { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="site-title">세계 랜드마크 기록 블로그</div>
+      <div class="site-subtitle">
+        북미 · 아시아 · 유럽의 대표 랜드마크들을 한 번에 둘러보는 여행 노트
+      </div>
+      <nav>
+        <div class="nav-links">
+          <a href="#north-america">북미</a>
+          <a href="#asia">아시아</a>
+          <a href="#europe">유럽</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>랜드마크로 떠나는 랜선 세계 여행</h1>
+      <p>
+        이 블로그는 북미, 아시아, 유럽의 유명 랜드마크를 간단한 설명과 함께 소개하는
+        여행 기록 페이지입니다. 각 카드를 클릭하면 해당 랜드마크에 대한 자세한 블로그 글로 이동합니다.
+      </p>
+    </section>
+
+    <!-- 북미 -->
+    <section id="north-america" class="continent">
+      <div class="continent-header">
+        <div class="continent-badge">🌎 North America</div>
+        <h2 class="continent-title">북미 랜드마크</h2>
+        <p class="continent-desc">
+          영화와 드라마에서 수없이 본 북미의 상징적인 장소들을 정리한 섹션입니다.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <!-- 자유의 여신상 -->
+        <a class="landmark-link" href="liberty.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1568737110552-fc872a889af8?auto=format&fit=crop&w=1200&q=80"
+                   alt="뉴욕 자유의 여신상 전경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">자유의 여신상</h3>
+              <div class="landmark-location">미국 · 뉴욕 (Statue of Liberty)</div>
+              <p class="landmark-desc">
+                미국을 상징하는 대표 랜드마크. 배를 타고 섬에 내려 직접 가까이에서 볼 수 있습니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+
+        <!-- 그랜드 캐니언 -->
+        <a class="landmark-link" href="grand-canyon.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1508261306211-45a1c5c2a5c5?auto=format&fit=crop&w=1200&q=80"
+                   alt="그랜드 캐니언 계곡 풍경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">그랜드 캐니언</h3>
+              <div class="landmark-location">미국 · 애리조나 (Grand Canyon)</div>
+              <p class="landmark-desc">
+                광활한 협곡과 붉은 지층이 끝없이 펼쳐진 자연 랜드마크. 일출·일몰 포인트가 특히 유명합니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+
+        <!-- 나이아가라 폭포 -->
+        <a class="landmark-link" href="niagara.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80"
+                   alt="나이아가라 폭포 전경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">나이아가라 폭포</h3>
+              <div class="landmark-location">미국 · 캐나다 국경 (Niagara Falls)</div>
+              <p class="landmark-desc">
+                캐나다와 미국을 잇는 거대한 폭포. 배를 타고 물보라를 맞으며 즐기는 투어가 유명합니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <!-- 아시아 -->
+    <section id="asia" class="continent">
+      <div class="continent-header">
+        <div class="continent-badge">🌏 Asia</div>
+        <h2 class="continent-title">아시아 랜드마크</h2>
+        <p class="continent-desc">
+          역사와 현대가 공존하는 아시아의 대표적인 랜드마크들입니다.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <!-- 경복궁 -->
+        <a class="landmark-link" href="gyeongbokgung.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1570238935375-0cce4a9d2750?auto=format&fit=crop&w=1200&q=80"
+                   alt="서울 경복궁 전경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">경복궁</h3>
+              <div class="landmark-location">대한민국 · 서울 (Gyeongbokgung Palace)</div>
+              <p class="landmark-desc">
+                조선 왕조의 정궁. 사계절 내내 다른 매력을 보여주는 서울의 대표 고궁입니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+
+        <!-- 만리장성 -->
+        <a class="landmark-link" href="great-wall.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=80"
+                   alt="중국 만리장성 풍경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">만리장성</h3>
+              <div class="landmark-location">중국 · 베이징 인근 (Great Wall of China)</div>
+              <p class="landmark-desc">
+                수천 킬로미터에 걸쳐 이어지는 거대한 성벽. 세계 7대 불가사의 중 하나로 손꼽힙니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+
+        <!-- 도쿄 타워 -->
+        <a class="landmark-link" href="tokyo-tower.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80"
+                   alt="도쿄 타워 야경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">도쿄 타워</h3>
+              <div class="landmark-location">일본 · 도쿄 (Tokyo Tower)</div>
+              <p class="landmark-desc">
+                도쿄 시내를 한눈에 볼 수 있는 대표 전망 타워. 야경이 특히 아름답습니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <!-- 유럽 -->
+    <section id="europe" class="continent">
+      <div class="continent-header">
+        <div class="continent-badge">🌍 Europe</div>
+        <h2 class="continent-title">유럽 랜드마크</h2>
+        <p class="continent-desc">
+          유럽의 도시와 역사, 건축을 상징하는 랜드마크들을 담았습니다.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <!-- 에펠탑 -->
+        <a class="landmark-link" href="eiffel.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80"
+                   alt="파리 에펠탑 전경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">에펠탑</h3>
+              <div class="landmark-location">프랑스 · 파리 (Eiffel Tower)</div>
+              <p class="landmark-desc">
+                파리의 상징적인 철탑. 낮과 밤, 계절마다 다른 분위기를 보여주는 로맨틱한 랜드마크입니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+
+        <!-- 콜로세움 -->
+        <a class="landmark-link" href="colosseum.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1578922864601-79dcc7cbcea1?auto=format&fit=crop&w=1200&q=80"
+                   alt="로마 콜로세움 전경" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">콜로세움</h3>
+              <div class="landmark-location">이탈리아 · 로마 (Colosseum)</div>
+              <p class="landmark-desc">
+                고대 로마 시대의 거대한 원형 경기장. 지금도 남아 있는 외벽과 구조가 인상적입니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+
+        <!-- 사그라다 파밀리아 -->
+        <a class="landmark-link" href="sagrada.html">
+          <article class="landmark-card">
+            <div class="landmark-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=80"
+                   alt="바르셀로나 사그라다 파밀리아 성당" />
+            </div>
+            <div class="landmark-body">
+              <h3 class="landmark-name">사그라다 파밀리아</h3>
+              <div class="landmark-location">스페인 · 바르셀로나 (Sagrada Família)</div>
+              <p class="landmark-desc">
+                가우디의 미완성 걸작. 독특한 외관과 섬세한 내부 장식이 인상적인 성당입니다.
+              </p>
+              <div class="landmark-tag">블로그 글 보기</div>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2025 World Landmarks Travel Blog</span>
+      <span>작성자: (여기에 닉네임)</span>
+    </div>
+  </footer>
+</body>
+</html>
