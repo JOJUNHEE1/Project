@@ -2,144 +2,218 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>경복궁 여행기 - 세계 랜드마크 블로그</title>
+  <title>경복궁 한바퀴 담은 하루 - 세계 랜드마크 블로그</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Pretendard, system-ui, sans-serif;
-      line-height: 1.7;
-      background: #f5f5f7;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+      line-height: 1.8;
+      background: #f3f4f6;
       color: #111827;
     }
     a { color: inherit; text-decoration: none; }
 
+    /* HEADER */
     header {
-      background: linear-gradient(120deg, #4f46e5, #06b6d4);
-      color: #fff;
-      padding: 1.8rem 1.5rem 1.3rem;
+      background: #111827;
+      color: #f9fafb;
+      padding: 1.4rem 1.5rem 1.1rem;
       margin-bottom: 1.5rem;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 20px rgba(15,23,42,0.45);
     }
-    .header-inner { max-width: 900px; margin: 0 auto; }
-    .site-title { font-size: 1.4rem; font-weight: 700; }
-    .breadcrumb {
-      margin-top: 0.4rem;
-      font-size: 0.85rem;
-      opacity: 0.9;
-    }
-    .breadcrumb a { text-decoration: underline dotted; }
-
-    main {
-      max-width: 900px;
+    .header-inner {
+      max-width: 840px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .site-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+    .breadcrumb a {
+      text-decoration: underline dotted;
+    }
+
+    /* MAIN LAYOUT */
+    main {
+      max-width: 840px;
+      margin: 0 auto 3rem;
       padding: 0 1.5rem;
     }
 
-    .hero {
-      background: #fff;
+    .post-card {
+      background: #ffffff;
       border-radius: 18px;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+      border: 1px solid rgba(148,163,184,0.4);
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      margin-bottom: 1.8rem;
     }
-    .hero-image {
+
+    /* HERO IMAGE */
+    .hero-img-wrap {
       width: 100%;
-      padding-bottom: 56%;
-      position: relative;
+      max-height: 420px;
+      overflow: hidden;
+      background: #000;
     }
-    .hero-image img {
-      position: absolute; inset: 0;
-      width: 100%; height: 100%;
+    .hero-img-wrap img {
+      width: 100%;
+      display: block;
       object-fit: cover;
     }
-    .hero-body {
-      padding: 1.2rem 1.4rem;
+
+    .post-body {
+      padding: 1.5rem 1.7rem 1.7rem;
     }
 
-    .hero-title { font-size: 1.7rem; font-weight: 700; }
-    .hero-meta { margin-top: 0.3rem; font-size: 0.9rem; color: #6b7280; }
-
-    /* 목차 스타일 */
-    .toc {
-      margin: 1.7rem 0;
-      padding: 1rem 1.2rem;
+    .post-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6366f1;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .post-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+    .post-meta {
+      font-size: 0.86rem;
+      color: #6b7280;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0.8rem;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+    .meta-dot::before {
+      content: "•";
+      margin: 0 0.3rem 0 0.1rem;
+    }
+    .tag-chip {
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
       background: #eef2ff;
-      border: 1px solid #c7d2fe;
-      border-radius: 12px;
+      color: #4f46e5;
+      font-size: 0.78rem;
     }
-    .toc-title { font-weight: 700; margin-bottom: 0.5rem; }
-    .toc ul { list-style: disc; padding-left: 1.2rem; }
-    .toc ul li { margin-bottom: 0.35rem; }
-    .toc a { color: #4f46e5; text-decoration: underline; }
 
-    /* 본문 */
-    article {
-      background: #fff;
-      padding: 1.6rem 1.5rem;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-      margin-bottom: 2rem;
+    /* ARTICLE TEXT */
+    article p {
+      font-size: 0.98rem;
+      color: #374151;
+      margin-bottom: 0.95rem;
     }
     article h2 {
-      font-size: 1.35rem;
-      margin: 1.4rem 0 0.5rem;
-      scroll-margin-top: 100px;
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.55rem;
+      padding-top: 0.3rem;
+      border-top: 1px solid #e5e7eb;
     }
-    article p {
-      margin-bottom: 0.8rem;
-      color: #374151;
-      font-size: 1rem;
+    article h2:first-of-type {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    article em {
+      font-style: normal;
+      color: #4b5563;
+      background: #f9fafb;
+      padding: 0.05rem 0.25rem;
+      border-radius: 4px;
     }
 
-    /* 관련 추천 */
-    .related {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
-      border-radius: 14px;
+    .tip-box {
+      margin: 1.2rem 0;
+      padding: 0.9rem 1rem;
+      border-radius: 12px;
+      background: #fefce8;
+      border: 1px solid #facc15;
+      font-size: 0.9rem;
+      color: #43302b;
     }
-    .related-title {
-      font-weight: 700;
-      margin-bottom: 0.6rem;
-      font-size: 1.1rem;
+    .tip-box strong {
+      display: block;
+      margin-bottom: 0.25rem;
     }
-    .related a {
-      display: inline-block;
-      padding: 0.45rem 0.7rem;
-      margin-right: 0.4rem;
-      margin-bottom: 0.4rem;
-      background: #eef2ff;
-      border-radius: 8px;
+
+    /* BOTTOM AREA */
+    .post-bottom {
+      margin-top: 1.6rem;
+      border-top: 1px dashed #e5e7eb;
+      padding-top: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .back-link {
       font-size: 0.9rem;
       color: #4f46e5;
+      text-decoration: underline dotted;
+      width: fit-content;
     }
 
-    /* 이전/다음 버튼 */
-    .nav-buttons {
+    .post-nav {
       display: flex;
       justify-content: space-between;
-      margin-top: 2rem;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      font-size: 0.88rem;
     }
-    .nav-buttons a {
-      background: #4f46e5;
-      color: white;
-      padding: 0.7rem 1.1rem;
-      border-radius: 10px;
+    .post-nav a {
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      background: #111827;
+      color: #f9fafb;
+      text-decoration: none;
+    }
+
+    .related {
       font-size: 0.9rem;
+    }
+    .related-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .related-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .related-tags a {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: #f3f4f6;
+      font-size: 0.84rem;
+      border: 1px solid #e5e7eb;
     }
 
     footer {
-      text-align: center;
-      padding: 2rem 0;
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 1.6rem 1.5rem 2.2rem;
+      font-size: 0.83rem;
       color: #6b7280;
-      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .post-body { padding: 1.3rem 1.1rem 1.5rem; }
+      .post-title { font-size: 1.45rem; }
     }
   </style>
 </head>
-
 <body>
 
 <header>
@@ -148,89 +222,185 @@
     <div class="breadcrumb">
       <a href="index.html">홈</a> ·
       <a href="index.html#asia">아시아</a> ·
-      경복궁
+      경복궁 한바퀴
     </div>
   </div>
 </header>
 
 <main>
+  <section class="post-card">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1570238935375-0cce4a9d2750?auto=format&fit=crop&w=1400&q=80">
+    <!-- 네가 올린 경복궁 사진 -->
+    <div class="hero-img-wrap">
+      <!-- 여기 src를 실제 파일 이름으로 바꿔줘 (예: gyeongbokgung.webp) -->
+      <img src="gyeongbokgung.jpg" alt="광화문 앞에서 바라본 경복궁 정문" />
     </div>
-    <div class="hero-body">
-      <h1 class="hero-title">경복궁, 서울 도심 속 조선의 심장</h1>
-      <div class="hero-meta">대한민국 · 서울 · Gyeongbokgung · 2025-12-03</div>
+
+    <div class="post-body">
+      <div class="post-kicker">SEOUL · KOREA</div>
+      <h1 class="post-title">경복궁, 서울 한복판에서 잠깐 시간을 거슬러 올라간 날</h1>
+
+      <div class="post-meta">
+        <span>작성일: 2025-12-03</span>
+        <span class="meta-dot">위치: 서울 종로구 세종로</span>
+        <span class="meta-dot">예상 읽기: 5분</span>
+        <span class="tag-chip">#서울여행</span>
+        <span class="tag-chip">#고궁산책</span>
+        <span class="tag-chip">#한복데이트</span>
+      </div>
+
+      <article>
+        <p>
+          서울에서 제일 복잡한 곳을 뽑으라면 대부분 광화문 근처를 떠올릴 거다.
+          출퇴근 시간에는 버스와 차들이 끊임없이 지나가고,
+          점심시간에는 직장인들로 인도가 꽉 찬다. 그런 거리에서
+          몇 걸음만 더 안쪽으로 들어가면, 갑자기 <em>공기 밀도</em>가 달라지는 느낌이 난다.
+          바로, 경복궁이다.
+        </p>
+
+        <h2>1. 광화문 앞으로 천천히 다가가는 시간</h2>
+        <p>
+          경복궁 방문은 늘 광화문 앞 도로를 건너는 순간부터 시작된다.
+          차들 사이로 슬쩍 보이던 광화문의 지붕이 점점 화면을 가득 채우고,
+          돌바닥을 밟는 발걸음이 조금씩 느려진다. 사진으로만 보던
+          &ldquo;광화문&rdquo;이 아니라, 진짜 눈앞에서 올라다보는 그 모습은 생각보다
+          훨씬 크고 단단하다. 특히 날이 조금 흐린 날에는 붉은 단청과
+          회색 기와, 그리고 구름 낀 하늘이 묘하게 잘 어울린다.
+        </p>
+
+        <p>
+          가끔 운이 좋으면 사진 속처럼 수문장 교대식을 마주치기도 한다.
+          알록달록한 의상을 입은 수문장들이 한 줄로 서서 천천히 걸어 들어갈 때,
+          길 건너편의 버스정류장과 신호등, 현대적인 간판들이 잠시 배경으로 밀려나고
+          &ldquo;지금이 몇 년도였더라?&rdquo; 하는 생각이 절로 든다.
+        </p>
+
+        <h2>2. 흙바닥, 기와, 그리고 북악산까지 한 프레임에</h2>
+        <p>
+          광화문을 통과해 안쪽으로 들어가면, 바닥이 아스팔트가 아니라
+          흙과 돌로 바뀐다. 그 순간부터는 속도를 일부러 줄이게 된다.
+          먼발치에 보이는 근정전까지 이어지는 길이 생각보다 길어서,
+          자연스럽게 주변을 구경하면서 걷게 된다.
+        </p>
+
+        <p>
+          흙바닥 위로 발자국이 쌓이고, 양쪽으로 회랑이 펼쳐진다.
+          고개를 조금만 더 들면 북악산이 프레임 뒤쪽을 꽉 채운다.
+          이 구도가 너무 예뻐서, 나도 모르게 사진을 여러 장 찍게 된다.
+          누군가는 경복궁을 &ldquo;서울의 배경화면 같은 곳&rdquo;이라고 표현했는데,
+          딱 맞는 말이다.
+        </p>
+
+        <h2>3. 근정전 앞에서 잠깐 멍 때리기</h2>
+        <p>
+          경복궁의 하이라이트는 역시 근정전이다.
+          계단을 올라가기 직전, 일부러 몇 걸음 떨어진 곳에 서서
+          전체를 한 번에 바라본다. 지붕의 곡선, 기둥의 간격,
+          그리고 단청의 색감이 워낙 세밀해서 한 번에 다 담기지 않는다.
+        </p>
+
+        <p>
+          관광객들은 사진을 빨리 찍고 옆으로 빠져주지만,
+          근정전 앞 광장은 조금 여유 있게 앉아 있기 좋은 곳이다.
+          날씨가 좋을 때는 대충 계단 모서리에 걸터앉아서
+          사람들 구경을 하는 것만으로도 시간이 꽤 잘 간다.
+          서울이지만, 서울이 아닌 것 같은 기분.
+        </p>
+
+        <h2>4. 경회루 쪽으로 살짝 방향을 틀어본다</h2>
+        <p>
+          근정전 구경을 마치고 오른쪽으로 꺾어 경회루 쪽으로 가면
+          분위기가 한 번 더 바뀐다. 탁 트인 연못과 그 위에 떠 있는
+          경회루는, 말 그대로 &ldquo;사진으로 본 그 장면&rdquo; 그대로다.
+          물 위로 비치는 기와와 기둥이 거울처럼 반사되는데,
+          바람이 잔잔한 날에는 거의 완벽한 대칭을 만들어낸다.
+        </p>
+
+        <p>
+          연못 주변을 따라 한 바퀴 천천히 돌다 보면,
+          서울이라는 도시가 이렇게나 다양한 표정을 가지고 있다는 게
+          새삼스럽게 이상하게 느껴진다. 조금 전까지는 빌딩 숲 사이에서
+          신호에 맞춰 뛰어다니던 나였는데, 지금은 연못에 비친 구름을
+          바라보며 속도를 잃어버린 상태니까.
+        </p>
+
+        <h2>5. 한복 입고 걷는 사람들, 그리고 사진 포인트</h2>
+        <p>
+          경복궁에서 빠질 수 없는 풍경이 바로 한복을 입은 사람들이다.
+          전통 한복부터 색감이 화려한 개량 한복까지,
+          각자 스타일대로 입고 돌아다니는데, 덕분에
+          &ldquo;풍경 속 캐릭터&rdquo;가 꽤 풍성해진 느낌이다.
+        </p>
+
+        <p>
+          특히 네가 한복을 입고 갔다면, 광화문 정면 사진은 거의 필수다.
+          사진 속처럼 정문 한가운데에 서서 정면샷을 찍고,
+          조금 비껴나서 측면에서 담으면 배경이 더 여유롭게 나온다.
+          날씨가 너무 해 쨍한 날보다는 약간 구름 낀 날이 색감이 훨씬 부드럽게 나온다.
+        </p>
+
+        <div class="tip-box">
+          <strong>작정하고 사진 찍고 싶을 때 꿀팁</strong>
+          · 개장 직후나 평일 오전을 노리면 사람 수가 확 줄어든다.<br/>
+          · 광화문 정면샷 → 근정전 앞 계단 → 경회루 연못 순으로 돌면 동선이 깔끔하다.<br/>
+          · 한복 대여점에서 머리 장식까지 같이 빌리면 사진 분위기가 훨씬 살아난다.
+        </div>
+
+        <h2>6. 밤에 다시 찾으면 완전 다른 분위기</h2>
+        <p>
+          가끔 열리는 야간 개장 때 경복궁을 다시 찾으면,
+          같은 장소지만 완전히 다른 공간처럼 느껴진다.
+          낮에는 건물의 디테일이 또렷하게 보였다면,
+          밤에는 조명이 만들어내는 그림자가 공간의 깊이를 만든다.
+        </p>
+
+        <p>
+          어두운 하늘 아래에서 은은하게 빛나는 기와와 담장,
+          그리고 발걸음 소리만 들리는 고요함까지.
+          낮에는 관광지였다면, 밤에는 조금 더
+          &ldquo;조용한 산책 코스&rdquo;에 가까운 느낌이다.
+        </p>
+
+        <h2>7. 경복궁이 좋은 이유 한 줄 요약</h2>
+        <p>
+          서울에서 마음이 복잡할 때, 멀리 떠날 여유가 없다면
+          경복궁은 꽤 괜찮은 선택이다. 입장료도 부담 없고,
+          지하철역에서 몇 분만 걸으면 도착하고,
+          시간이 허락하는 만큼만 걷다가 나와도 된다.
+        </p>
+
+        <p>
+          딱 그 정도의 가벼운 거리감이,
+          경복궁을 더 자주 떠올리게 만드는 것 같다.
+          &ldquo;잠깐 고궁 한 바퀴 돌고 올까?&rdquo; 하고 말이다.
+        </p>
+
+        <!-- BOTTOM -->
+        <div class="post-bottom">
+          <a class="back-link" href="index.html#asia">← 아시아 랜드마크 목록으로 돌아가기</a>
+
+          <div class="post-nav">
+            <a href="niagara.html">← 이전 글: 나이아가라 폭포</a>
+            <a href="great-wall.html">다음 글: 만리장성 →</a>
+          </div>
+
+          <div class="related">
+            <div class="related-title">이 글이 좋았다면 이런 곳도 어울려요</div>
+            <div class="related-tags">
+              <a href="tokyo-tower.html">도쿄 타워 야경 산책</a>
+              <a href="eiffel.html">에펠탑 야간 조명 구경</a>
+              <a href="grand-canyon.html">그랜드 캐니언 일출</a>
+            </div>
+          </div>
+        </div>
+
+      </article>
     </div>
   </section>
-
-  <!-- 목차 -->
-  <div class="toc">
-    <div class="toc-title">📌 목차</div>
-    <ul>
-      <li><a href="#section1">광화문을 지나 안으로 들어서다</a></li>
-      <li><a href="#section2">근정전과 경회루</a></li>
-      <li><a href="#section3">한복 입고 걷는 경복궁</a></li>
-      <li><a href="#section4">사계절이 모두 어울리는 궁</a></li>
-    </ul>
-  </div>
-
-  <!-- ARTICLE -->
-  <article>
-    
-    <h2 id="section1">1. 광화문을 지나 안으로 들어서다</h2>
-    <p>
-      경복궁은 서울 한복판에 있지만,
-      광화문을 지나 마당으로 들어서는 순간 세상이 고요해집니다.
-      북악산이 그림처럼 뒤에 펼쳐지고,
-      궁궐의 건물들이 질서 있게 배치되어 있어
-      도심 속에서 잠시 시간을 잊게 만드는 공간입니다.
-    </p>
-
-    <h2 id="section2">2. 근정전과 경회루</h2>
-    <p>
-      경복궁에서 가장 압도적인 두 장소는 근정전과 경회루입니다.
-      근정전은 왕이 공식 행사를 치르던 곳으로,
-      기둥·단청·지붕선까지 조선의 건축미가 그대로 담겨 있습니다.
-      경회루는 연못 위에 떠 있는 듯한 누각으로,
-      물에 비친 모습이 더 아름답습니다.
-    </p>
-
-    <h2 id="section3">3. 한복 입고 걷는 경복궁</h2>
-    <p>
-      경복궁의 매력 중 하나는 '한복을 입고 돌아다닐 수 있다'는 점입니다.
-      실제로 한복을 입으면 입장료가 무료이기도 하고,
-      사진도 더 생생하게 남습니다.
-    </p>
-
-    <h2 id="section4">4. 사계절이 모두 어울리는 궁</h2>
-    <p>
-      경복궁은 계절마다 표정이 달라집니다.
-      봄의 벚꽃, 여름의 짙은 녹음, 가을의 단풍, 겨울의 설경까지
-      어떤 시기에 방문해도 분위기가 완전히 다릅니다.
-    </p>
-
-    <!-- 관련 추천 -->
-    <div class="related">
-      <div class="related-title">🔗 관련 랜드마크 추천</div>
-      <a href="great-wall.html">만리장성</a>
-      <a href="tokyo-tower.html">도쿄 타워</a>
-      <a href="liberty.html">자유의 여신상</a>
-    </div>
-
-    <!-- 이전 / 다음 -->
-    <div class="nav-buttons">
-      <a href="niagara.html">← 이전 랜드마크</a>
-      <a href="great-wall.html">다음 랜드마크 →</a>
-    </div>
-
-  </article>
 </main>
 
 <footer>
-  © 2025 World Landmarks Travel Blog
+  © 2025 World Landmarks Travel Blog · 글쓴이: (닉네임)
 </footer>
 
 </body>
