@@ -2,406 +2,333 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>경복궁 한바퀴 담은 하루 - 세계 랜드마크 블로그</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <title>경복궁 여행기 - 한양의 시간 위를 걷다</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="서울 여행의 핵심, 경복궁 방문 후기와 볼거리, 사진 스팟, 교통, 꿀팁까지 정리한 블로그 형식의 HTML 예시입니다." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", sans-serif;
-      line-height: 1.8;
-      background: #f3f4f6;
-      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", system-ui, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #222;
     }
-    a { color: inherit; text-decoration: none; }
 
-    /* HEADER */
     header {
-      background: #111827;
-      color: #f9fafb;
-      padding: 1.4rem 1.5rem 1.1rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 6px 20px rgba(15,23,42,0.45);
-    }
-    .header-inner {
-      max-width: 840px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-    .site-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-    .breadcrumb {
-      font-size: 0.85rem;
-      opacity: 0.85;
-    }
-    .breadcrumb a {
-      text-decoration: underline dotted;
-    }
-
-    /* MAIN LAYOUT */
-    main {
-      max-width: 840px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem;
-    }
-
-    .post-card {
-      background: #ffffff;
-      border-radius: 18px;
-      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
-      border: 1px solid rgba(148,163,184,0.4);
-      overflow: hidden;
-    }
-
-    /* HERO IMAGE */
-    .hero-img-wrap {
-      width: 100%;
-      max-height: 420px;
-      overflow: hidden;
-      background: #000;
-    }
-    .hero-img-wrap img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-    }
-
-    .post-body {
-      padding: 1.5rem 1.7rem 1.7rem;
-    }
-
-    .post-kicker {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #6366f1;
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-    }
-    .post-title {
-      font-size: 1.7rem;
-      font-weight: 800;
-      margin-bottom: 0.4rem;
-    }
-    .post-meta {
-      font-size: 0.86rem;
-      color: #6b7280;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem 0.8rem;
-      align-items: center;
-      margin-bottom: 1.2rem;
-    }
-    .meta-dot::before {
-      content: "•";
-      margin: 0 0.3rem 0 0.1rem;
-    }
-    .tag-chip {
-      padding: 0.15rem 0.55rem;
-      border-radius: 999px;
-      background: #eef2ff;
-      color: #4f46e5;
-      font-size: 0.78rem;
-    }
-
-    /* ARTICLE TEXT */
-    article p {
-      font-size: 0.98rem;
-      color: #374151;
-      margin-bottom: 0.95rem;
-    }
-    article h2 {
-      font-size: 1.25rem;
-      margin: 1.5rem 0 0.55rem;
-      padding-top: 0.3rem;
-      border-top: 1px solid #e5e7eb;
-    }
-    article h2:first-of-type {
-      border-top: none;
-      margin-top: 0;
-      padding-top: 0;
-    }
-    article em {
-      font-style: normal;
-      color: #4b5563;
-      background: #f9fafb;
-      padding: 0.05rem 0.25rem;
-      border-radius: 4px;
-    }
-
-    .tip-box {
-      margin: 1.2rem 0;
-      padding: 0.9rem 1rem;
-      border-radius: 12px;
-      background: #fefce8;
-      border: 1px solid #facc15;
-      font-size: 0.9rem;
-      color: #43302b;
-    }
-    .tip-box strong {
-      display: block;
-      margin-bottom: 0.25rem;
-    }
-
-    /* BOTTOM AREA */
-    .post-bottom {
-      margin-top: 1.6rem;
-      border-top: 1px dashed #e5e7eb;
-      padding-top: 1.1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .back-link {
-      font-size: 0.9rem;
-      color: #4f46e5;
-      text-decoration: underline dotted;
-      width: fit-content;
-    }
-
-    .post-nav {
-      display: flex;
-      justify-content: space-between;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-      font-size: 0.88rem;
-    }
-    .post-nav a {
-      padding: 0.55rem 0.9rem;
-      border-radius: 999px;
-      background: #111827;
-      color: #f9fafb;
-      text-decoration: none;
-    }
-
-    .related {
-      font-size: 0.9rem;
-    }
-    .related-title {
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-    }
-    .related-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-    .related-tags a {
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background: #f3f4f6;
-      font-size: 0.84rem;
-      border: 1px solid #e5e7eb;
-    }
-
-    footer {
-      max-width: 840px;
-      margin: 0 auto;
-      padding: 1.6rem 1.5rem 2.2rem;
-      font-size: 0.83rem;
-      color: #6b7280;
+      background: linear-gradient(135deg, #4b7bec, #20bf6b);
+      color: #fff;
+      padding: 3rem 1.5rem 2rem;
       text-align: center;
     }
 
-    @media (max-width: 640px) {
-      .post-body { padding: 1.3rem 1.1rem 1.5rem; }
-      .post-title { font-size: 1.45rem; }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.1rem;
+    }
+
+    header p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    .hero-image {
+      margin: 0 auto 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      border-left: 4px solid #4b7bec;
+      padding-left: 0.7rem;
+    }
+
+    h3 {
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0.3rem 0 0.7rem;
+      font-size: 0.98rem;
+    }
+
+    ul, ol {
+      margin: 0.3rem 0 1rem 1.3rem;
+      font-size: 0.95rem;
+    }
+
+    .info-box {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+      margin: 1.5rem 0;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+    }
+
+    .tag-list {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      margin: 0 0.3rem 0.3rem 0;
+      border-radius: 999px;
+      background-color: #e8f0ff;
+      color: #3867d6;
+    }
+
+    .tip {
+      position: relative;
+      padding-left: 1.7rem;
+    }
+
+    .tip::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
+      color: #20bf6b;
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, #e8ffef 0%, #e8f0ff 100%);
+      padding: 0.3rem 0.35rem;
+      border-radius: 4px;
+    }
+
+    .divider {
+      margin: 2.5rem 0;
+      border-top: 1px dashed #ddd;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem 1rem 2.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 2.4rem 1rem 1.6rem;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      main {
+        padding: 1.8rem 1.1rem 2.4rem;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>경복궁 여행기 🏯</h1>
+    <p>돌길 위로 겹겹이 쌓인 시간, 한양의 숨을 따라 걷는 하루</p>
+    <p>Gyeongbokgung Travel Log / 서울 고궁 산책 기록</p>
+  </header>
 
-<header>
-  <div class="header-inner">
-    <div class="site-title">세계 랜드마크 기록 블로그</div>
-    <div class="breadcrumb">
-      <a href="index.html">홈</a> ·
-      <a href="index.html#asia">아시아</a> ·
-      경복궁 한바퀴
-    </div>
-  </div>
-</header>
-
-<main>
-  <section class="post-card">
-
-    <!-- 네가 올린 경복궁 사진 -->
-    <div class="hero-img-wrap">
-      <!-- 여기 src를 실제 파일 이름으로 바꿔줘 (예: gyeongbokgung.webp) -->
-      <img src="gyeongbokgung.jpg" alt="광화문 앞에서 바라본 경복궁 정문" />
+  <main>
+    <div class="hero-image">
+      <!-- 실제 이미지 경로로 교체해서 사용하세요 -->
+      <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1200&q=80"
+           alt="경복궁 근정전 전경" />
     </div>
 
-    <div class="post-body">
-      <div class="post-kicker">SEOUL · KOREA</div>
-      <h1 class="post-title">경복궁, 서울 한복판에서 잠깐 시간을 거슬러 올라간 날</h1>
+    <section>
+      <h2>1. 서울 한복판에서 만나는 옛 수도의 심장</h2>
+      <p>
+        광화문을 통과해 경복궁 안으로 한 걸음 들어서는 순간,
+        빌딩 숲 사이에 숨겨져 있던 또 다른 도시가 펼쳐지는 느낌이 든다.
+        <span class="highlight">유리창과 네온사인 대신 기와지붕과 돌계단이 시야를 채우는 순간</span>,
+        지금 서 있는 곳이 분명 서울인데도 서울이 아닌 것 같은 묘한 이질감이 찾아온다.
+      </p>
+      <p>
+        조선의 법궁이었던 경복궁은 단순히 “옛 건물들이 모여 있는 공간”이 아니라,
+        왕과 신하들이 실제로 오가고, 의식이 열리고, 일상의 시간이 흐르던
+        <strong>당시 국가 운영의 중심 무대</strong>였다.
+        그래서인지 넓은 마당을 걷다 보면, 사람들의 발걸음 소리 사이로
+        오래전 의식의 잔향이 살짝 겹쳐 들리는 듯한 기분이 든다.
+      </p>
 
-      <div class="post-meta">
-        <span>작성일: 2025-12-03</span>
-        <span class="meta-dot">위치: 서울 종로구 세종로</span>
-        <span class="meta-dot">예상 읽기: 5분</span>
-        <span class="tag-chip">#서울여행</span>
-        <span class="tag-chip">#고궁산책</span>
-        <span class="tag-chip">#한복데이트</span>
+      <div class="info-box">
+        <h3>🏯 경복궁 기본 정보 한눈에 보기</h3>
+        <ul>
+          <li>위치: 서울특별시 종로구 사직로 161</li>
+          <li>시대: 조선 왕조의 법궁(정궁)</li>
+          <li>대표 건축물: 광화문, 흥례문, 근정전, 경회루, 향원정 등</li>
+          <li>관람 시간: 계절별·요일별로 상이 (방문 전 공식 홈페이지 확인 추천)</li>
+          <li>특징: 한옥과 연못, 산세가 어우러진 전통 궁궐 공간</li>
+        </ul>
+        <p class="tag-list">
+          <span class="tag">#서울여행</span>
+          <span class="tag">#한복데이트</span>
+          <span class="tag">#고궁산책</span>
+          <span class="tag">#경복궁</span>
+        </p>
       </div>
+    </section>
 
-      <article>
+    <section>
+      <h2>2. 광화문을 지나 근정전까지, 정전 라인 따라 걷기</h2>
+      <p>
+        경복궁 관람은 보통 <span class="highlight">광화문 → 흥례문 → 근정전</span>으로 이어지는
+        직선 동선을 중심으로 시작된다. 바닥의 길쭉한 박석을 따라 걷다 보면,
+        자연스럽게 왕이 걸었을 법한 길을 함께 밟아 나가는 느낌이 든다.
+      </p>
+      <p>
+        근정전 앞 넓은 마당에는 품계석이 일렬로 놓여 있는데,
+        신하들이 서서 왕을 기다리던 자리를 짐작해 볼 수 있다.
+        햇빛이 강한 날에는 석물의 그림자가 길게 드리워져서,
+        흑백 사진 속 장면에 들어온 것 같은 기분이 들기도 한다.
+      </p>
+
+      <h3>📸 정전 라인 포토 스폿</h3>
+      <ul>
+        <li>광화문 밖에서 바라본 경복궁과 북악산 라인</li>
+        <li>흥례문 통과 후, 근정전이 정면으로 들어오는 구도</li>
+        <li>근정전 옆에서 대각선으로 바라본 전각 + 하늘 조합</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 경회루와 향원정, 물 위에 떠 있는 풍경 같은 공간들</h2>
+      <p>
+        정전 구역을 지나 안쪽으로 조금 더 들어가면,
+        경복궁에서 가장 많이 사진으로 담기는 두 곳을 만나게 된다.
+        바로 <strong>경회루</strong>와 <strong>향원정</strong>이다.
+      </p>
+
+      <h3>🌊 경회루 – 연못 위에 떠 있는 연회 공간</h3>
+      <p>
+        경회루는 국가의 연회나 외교 행사 등이 열리던 누각으로,
+        넓은 연못 위에 기둥이 촘촘히 세워져 있어 먼 거리에서 보면
+        <span class="highlight">건물이 물 위에 살짝 떠 있는 것처럼</span> 보인다.
+        바람이 적은 날에는 연못에 전각이 거울처럼 비쳐서 사진 찍기에도 좋다.
+      </p>
+
+      <h3>🍂 향원정 – 계절이 바뀔 때마다 인상이 달라지는 곳</h3>
+      <p>
+        향원정은 작은 섬 위에 지어진 정자와 그곳으로 이어지는 다리가 인상적인 장소다.
+        봄에는 연둣빛, 여름에는 짙은 초록, 가을에는 단풍, 겨울에는 눈 덮인 풍경까지
+        <strong>계절의 변화가 가장 극적으로 드러나는 공간</strong>이라,
+        시기별로 다시 찾고 싶어지는 포인트이기도 하다.
+      </p>
+
+      <div class="info-box">
+        <h3>💡 연못 주변 감상 팁</h3>
+        <p class="tip">사람이 많은 낮 시간대엔, 연못을 한 바퀴 돌며 조용한 구도를 찾으면 좋다.</p>
+        <p class="tip">바람이 잔잔한 날에는 물에 비친 반영까지 포함해 사진을 찍어보자.</p>
+        <p class="tip">굳이 사진을 많이 찍지 않고, 잠깐 벤치에 앉아 있는 것만으로도 만족도가 높다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. 한복 대여와 함께 즐기는 경복궁</h2>
+      <p>
+        경복궁 주변에는 한복 대여점이 많아서,
+        <span class="highlight">한복을 입고 입장하면 관람료가 면제</span>되는 혜택도 자주 운영된다.
+        한복을 입고 궁궐 안을 천천히 걷다 보면, 단순한 관광이 아니라
+        마치 타임슬립을 한 듯한 체험에 가까운 시간이 된다.
+      </p>
+      <p>
+        전통 한복뿐만 아니라 색감이 살짝 현대적으로 변형된 디자인도 많아서,
+        본인의 스타일에 맞춰 선택할 수 있는 점도 장점이다.
+      </p>
+
+      <h3>👗 한복 입고 경복궁 즐기는 법</h3>
+      <ul>
+        <li>입장 전, 옷이 땅에 끌리지 않도록 길이와 신발을 함께 고려하기</li>
+        <li>포인트 색을 하나 정해서, 액세서리나 헤어 장식을 맞춰보면 사진이 더 잘 나온다.</li>
+        <li>햇빛이 강한 날에는 양산이나 접이식 우산을 활용하면 그늘과 사진 두 마리 토끼를 잡을 수 있다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 경복궁 가는 길 & 주변 동선 추천</h2>
+      <p>
+        경복궁은 대중교통 접근성이 좋아서, 다른 서울 도심 여행 코스와 묶기에도 편하다.
+        지하철역에서 바로 연결되는 동선이 많아 초행자도 어렵지 않게 찾을 수 있다.
+      </p>
+
+      <h3>🚇 대표적인 접근 방법</h3>
+      <ul>
+        <li>지하철 3호선 <strong>경복궁역</strong> 하차 후 5번 출구 방향 도보 이동</li>
+        <li>지하철 5호선 <strong>광화문역</strong> 하차 후 광화문 광장을 지나 도보 이동</li>
+        <li>북촌 한옥마을, 인사동, 서촌과 동선을 묶어 하루 코스로 구성하기</li>
+      </ul>
+
+      <p>
+        오전에 경복궁을 먼저 둘러보고, 점심은 근처에서 한식이나 디저트를 먹은 뒤
+        <span class="highlight">오후에는 북촌·서촌 골목 산책</span>으로 이어가는 코스가 특히 인기 있다.
+        조용한 골목과 고궁의 조합은, 서울을 조금 다른 시각에서 바라보게 해 준다.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 경복궁을 ‘자주 다시 찾게 되는 곳’으로 만드는 포인트</h2>
+      <p>
+        경복궁의 풍경은 날씨와 계절에 따라, 그리고 방문하는 시간대에 따라
+        완전히 다른 인상을 준다. 비가 오는 날의 젖은 기와, 눈이 쌓인 마당,
+        가을 햇살 아래 붉게 물든 단풍까지, <strong>한 번의 방문으로는 다 담기 어려운 얼굴</strong>을 가지고 있다.
+      </p>
+      <p>
+        그래서 경복궁은 “서울에 살면 가끔 생각나는 곳”이 되기 쉽다.
+        기념비적인 관광지가 아니라, 필요할 때 조용히 찾아가
+        잠깐 머리를 식히고 돌아오는 일상적인 쉼표 같은 역할을 해주기도 한다.
+      </p>
+
+      <div class="info-box">
+        <h3>🔚 경복궁에서 남는 건 ‘풍경 + 발걸음의 속도’</h3>
         <p>
-          서울에서 제일 복잡한 곳을 뽑으라면 대부분 광화문 근처를 떠올릴 거다.
-          출퇴근 시간에는 버스와 차들이 끊임없이 지나가고,
-          점심시간에는 직장인들로 인도가 꽉 찬다. 그런 거리에서
-          몇 걸음만 더 안쪽으로 들어가면, 갑자기 <em>공기 밀도</em>가 달라지는 느낌이 난다.
-          바로, 경복궁이다.
+          경복궁을 천천히 걸어 나오다 보면,
+          <span class="highlight">내가 걷는 속도가 잠시 과거의 시간에 맞춰졌다가</span>
+          다시 현재의 서울로 돌아오는 느낌이 든다.
         </p>
-
-        <h2>1. 광화문 앞으로 천천히 다가가는 시간</h2>
         <p>
-          경복궁 방문은 늘 광화문 앞 도로를 건너는 순간부터 시작된다.
-          차들 사이로 슬쩍 보이던 광화문의 지붕이 점점 화면을 가득 채우고,
-          돌바닥을 밟는 발걸음이 조금씩 느려진다. 사진으로만 보던
-          &ldquo;광화문&rdquo;이 아니라, 진짜 눈앞에서 올라다보는 그 모습은 생각보다
-          훨씬 크고 단단하다. 특히 날이 조금 흐린 날에는 붉은 단청과
-          회색 기와, 그리고 구름 낀 하늘이 묘하게 잘 어울린다.
+          화려한 볼거리를 쫓기보다, 돌길 위를 천천히 걸으며
+          바람과 햇빛, 기와와 나무의 조합을 있는 그대로 느껴보는 것.
+          결국 그런 순간들이 경복궁을 떠올릴 때 가장 먼저 떠오르는 장면으로 남는다.
         </p>
+      </div>
+    </section>
 
-        <p>
-          가끔 운이 좋으면 사진 속처럼 수문장 교대식을 마주치기도 한다.
-          알록달록한 의상을 입은 수문장들이 한 줄로 서서 천천히 걸어 들어갈 때,
-          길 건너편의 버스정류장과 신호등, 현대적인 간판들이 잠시 배경으로 밀려나고
-          &ldquo;지금이 몇 년도였더라?&rdquo; 하는 생각이 절로 든다.
-        </p>
+    <div class="divider"></div>
 
-        <h2>2. 흙바닥, 기와, 그리고 북악산까지 한 프레임에</h2>
-        <p>
-          광화문을 통과해 안쪽으로 들어가면, 바닥이 아스팔트가 아니라
-          흙과 돌로 바뀐다. 그 순간부터는 속도를 일부러 줄이게 된다.
-          먼발치에 보이는 근정전까지 이어지는 길이 생각보다 길어서,
-          자연스럽게 주변을 구경하면서 걷게 된다.
-        </p>
-
-        <p>
-          흙바닥 위로 발자국이 쌓이고, 양쪽으로 회랑이 펼쳐진다.
-          고개를 조금만 더 들면 북악산이 프레임 뒤쪽을 꽉 채운다.
-          이 구도가 너무 예뻐서, 나도 모르게 사진을 여러 장 찍게 된다.
-          누군가는 경복궁을 &ldquo;서울의 배경화면 같은 곳&rdquo;이라고 표현했는데,
-          딱 맞는 말이다.
-        </p>
-
-        <h2>3. 근정전 앞에서 잠깐 멍 때리기</h2>
-        <p>
-          경복궁의 하이라이트는 역시 근정전이다.
-          계단을 올라가기 직전, 일부러 몇 걸음 떨어진 곳에 서서
-          전체를 한 번에 바라본다. 지붕의 곡선, 기둥의 간격,
-          그리고 단청의 색감이 워낙 세밀해서 한 번에 다 담기지 않는다.
-        </p>
-
-        <p>
-          관광객들은 사진을 빨리 찍고 옆으로 빠져주지만,
-          근정전 앞 광장은 조금 여유 있게 앉아 있기 좋은 곳이다.
-          날씨가 좋을 때는 대충 계단 모서리에 걸터앉아서
-          사람들 구경을 하는 것만으로도 시간이 꽤 잘 간다.
-          서울이지만, 서울이 아닌 것 같은 기분.
-        </p>
-
-        <h2>4. 경회루 쪽으로 살짝 방향을 틀어본다</h2>
-        <p>
-          근정전 구경을 마치고 오른쪽으로 꺾어 경회루 쪽으로 가면
-          분위기가 한 번 더 바뀐다. 탁 트인 연못과 그 위에 떠 있는
-          경회루는, 말 그대로 &ldquo;사진으로 본 그 장면&rdquo; 그대로다.
-          물 위로 비치는 기와와 기둥이 거울처럼 반사되는데,
-          바람이 잔잔한 날에는 거의 완벽한 대칭을 만들어낸다.
-        </p>
-
-        <p>
-          연못 주변을 따라 한 바퀴 천천히 돌다 보면,
-          서울이라는 도시가 이렇게나 다양한 표정을 가지고 있다는 게
-          새삼스럽게 이상하게 느껴진다. 조금 전까지는 빌딩 숲 사이에서
-          신호에 맞춰 뛰어다니던 나였는데, 지금은 연못에 비친 구름을
-          바라보며 속도를 잃어버린 상태니까.
-        </p>
-
-        <h2>5. 한복 입고 걷는 사람들, 그리고 사진 포인트</h2>
-        <p>
-          경복궁에서 빠질 수 없는 풍경이 바로 한복을 입은 사람들이다.
-          전통 한복부터 색감이 화려한 개량 한복까지,
-          각자 스타일대로 입고 돌아다니는데, 덕분에
-          &ldquo;풍경 속 캐릭터&rdquo;가 꽤 풍성해진 느낌이다.
-        </p>
-
-        <p>
-          특히 네가 한복을 입고 갔다면, 광화문 정면 사진은 거의 필수다.
-          사진 속처럼 정문 한가운데에 서서 정면샷을 찍고,
-          조금 비껴나서 측면에서 담으면 배경이 더 여유롭게 나온다.
-          날씨가 너무 해 쨍한 날보다는 약간 구름 낀 날이 색감이 훨씬 부드럽게 나온다.
-        </p>
-
-        <div class="tip-box">
-          <strong>작정하고 사진 찍고 싶을 때 꿀팁</strong>
-          · 개장 직후나 평일 오전을 노리면 사람 수가 확 줄어든다.<br/>
-          · 광화문 정면샷 → 근정전 앞 계단 → 경회루 연못 순으로 돌면 동선이 깔끔하다.<br/>
-          · 한복 대여점에서 머리 장식까지 같이 빌리면 사진 분위기가 훨씬 살아난다.
-        </div>
-
-        <h2>6. 밤에 다시 찾으면 완전 다른 분위기</h2>
-        <p>
-          가끔 열리는 야간 개장 때 경복궁을 다시 찾으면,
-          같은 장소지만 완전히 다른 공간처럼 느껴진다.
-          낮에는 건물의 디테일이 또렷하게 보였다면,
-          밤에는 조명이 만들어내는 그림자가 공간의 깊이를 만든다.
-        </p>
-
-        <p>
-          어두운 하늘 아래에서 은은하게 빛나는 기와와 담장,
-          그리고 발걸음 소리만 들리는 고요함까지.
-          낮에는 관광지였다면, 밤에는 조금 더
-          &ldquo;조용한 산책 코스&rdquo;에 가까운 느낌이다.
-        </p>
-
-        <h2>7. 경복궁이 좋은 이유 한 줄 요약</h2>
-        <p>
-          서울에서 마음이 복잡할 때, 멀리 떠날 여유가 없다면
-          경복궁은 꽤 괜찮은 선택이다. 입장료도 부담 없고,
-          지하철역에서 몇 분만 걸으면 도착하고,
-          시간이 허락하는 만큼만 걷다가 나와도 된다.
-        </p>
-
-        <p>
-          딱 그 정도의 가벼운 거리감이,
-          경복궁을 더 자주 떠올리게 만드는 것 같다.
-          &ldquo;잠깐 고궁 한 바퀴 돌고 올까?&rdquo; 하고 말이다.
-        </p>
-
-        <!-- BOTTOM -->
-        <div class="post-bottom">
-          <a class="back-link" href="index.html#asia">← 아시아 랜드마크 목록으로 돌아가기</a>
-
-          <div class="post-nav">
-            <a href="niagara.html">← 이전 글: 나이아가라 폭포</a>
-            <a href="great-wall.html">다음 글: 만리장성 →</a>
-          </div>
-
-          <div class="related">
-            <div class="related-title">이 글이 좋았다면 이런 곳도 어울려요</div>
-            <div class="related-tags">
-              <a href="tokyo-tower.html">도쿄 타워 야경 산책</a>
-              <a href="eiffel.html">에펠탑 야간 조명 구경</a>
-              <a href="grand-canyon.html">그랜드 캐니언 일출</a>
-            </div>
-          </div>
-        </div>
-
-      </article>
-    </div>
-  </section>
-</main>
-
-<footer>
-  © 2025 World Landmarks Travel Blog · 글쓴이: (조준희)
-</footer>
-
+    <footer>
+      <p>© 2025 Seoul Palace Travel Log. All rights reserved.</p>
+      <p>경복궁 · Gyeongbokgung · 서울 고궁 산책 기록용 블로그 HTML 예시</p>
+    </footer>
+  </main>
 </body>
 </html>
