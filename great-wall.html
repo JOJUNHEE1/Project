@@ -2,226 +2,344 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>만리장성 여행기 - 세계 랜드마크 블로그</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>만리장성 여행기 - 끝없이 이어지는 거대한 장벽 위를 걷다</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="중국 여행의 상징, 만리장성 방문 후기와 역사, 코스, 난이도, 분위기, 여행 꿀팁까지 정리한 블로그 글입니다." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", system-ui, sans-serif;
       line-height: 1.7;
-      background: #f5f5f7;
-      color: #111827;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #222;
     }
-    a { color: inherit; text-decoration: none; }
 
     header {
-      background: linear-gradient(120deg, #4f46e5, #06b6d4);
+      background: linear-gradient(135deg, #c0392b, #d35400);
       color: #fff;
-      padding: 1.8rem 1.5rem 1.3rem;
-      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
-      margin-bottom: 1.5rem;
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
     }
-    .header-inner { max-width: 920px; margin: 0 auto; }
-    .site-title { font-size: 1.4rem; font-weight: 700; }
-    .breadcrumb {
-      margin-top: 0.45rem;
-      font-size: 0.85rem;
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.1rem;
+    }
+
+    header p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
       opacity: 0.9;
-    }
-    .breadcrumb a {
-      text-decoration: underline;
-      text-decoration-style: dotted;
     }
 
     main {
-      max-width: 920px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
     }
 
-    .hero {
-      background: #ffffff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      margin-bottom: 1.8rem;
-    }
     .hero-image {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56%;
-      overflow: hidden;
-    }
-    .hero-image img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      inset: 0;
-      filter: saturate(1.05);
-    }
-    .hero-body { padding: 1.2rem 1.4rem 1.4rem; }
-    .hero-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-    .hero-meta {
-      font-size: 0.88rem;
-      color: #6b7280;
-    }
-
-    article {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.4rem 1.5rem 1.6rem;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-    }
-
-    article h2 {
-      font-size: 1.25rem;
-      margin: 1.3rem 0 0.4rem;
-    }
-    article h2:first-of-type { margin-top: 0; }
-
-    article p {
-      font-size: 0.96rem;
-      color: #374151;
-      margin-bottom: 0.75rem;
-    }
-
-    .tip-box {
-      margin-top: 1rem;
-      padding: 0.9rem 1rem;
+      margin: 0 auto 2rem;
       border-radius: 12px;
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      font-size: 0.9rem;
-      color: #1f2937;
+      overflow: hidden;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
     }
-    .tip-box strong { display: block; margin-bottom: 0.2rem; }
 
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-top: 1.4rem;
+    .hero-image img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      border-left: 4px solid #c0392b;
+      padding-left: 0.7rem;
+    }
+
+    h3 {
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0.3rem 0 0.7rem;
+      font-size: 0.98rem;
+    }
+
+    ul, ol {
+      margin: 0.3rem 0 1rem 1.3rem;
+      font-size: 0.95rem;
+    }
+
+    .info-box {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+      margin: 1.5rem 0;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+    }
+
+    .tag-list {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      margin: 0 0.3rem 0.3rem 0;
+      border-radius: 999px;
+      background-color: #fdecea;
+      color: #c0392b;
+    }
+
+    .tip {
+      position: relative;
+      padding-left: 1.7rem;
+    }
+
+    .tip::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
+      color: #c0392b;
       font-size: 0.9rem;
-      color: #4f46e5;
-      text-decoration: underline;
-      text-decoration-style: dotted;
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, #fff3e0 0%, #fdecea 100%);
+      padding: 0.3rem 0.35rem;
+      border-radius: 4px;
+    }
+
+    .divider {
+      margin: 2.5rem 0;
+      border-top: 1px dashed #ddd;
     }
 
     footer {
-      border-top: 1px solid #e5e7eb;
-      padding: 1rem 1.5rem 2rem;
-      background: #f9fafb;
-      font-size: 0.84rem;
-      color: #6b7280;
-      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem 1rem 2.5rem;
     }
-    .footer-inner {
-      max-width: 920px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+      header {
+        padding: 2.4rem 1rem 1.6rem;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      main {
+        padding: 1.8rem 1.1rem 2.4rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <div class="site-title">세계 랜드마크 기록 블로그</div>
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> ·
-        <a href="index.html#asia">아시아</a> ·
-        만리장성 여행기
-      </div>
-    </div>
+    <h1>만리장성 여행기 🧱</h1>
+    <p>끝없이 이어지는 장벽 위에서, 산과 바람을 따라 걸었던 하루</p>
+    <p>Great Wall of China Travel Log / 중국 랜드마크 기록</p>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-image">
-        <img src= "greatwall.jpg"
-             alt="만리장성 풍경" />
-      </div>
-      <div class="hero-body">
-        <h1 class="hero-title">만리장성, 구름 위를 걷는 것 같은 성벽</h1>
-        <div class="hero-meta">
-          중국 · 베이징 인근 · Great Wall of China<br />
-          작성일: 2025-12-03 · 태그: 역사, 세계문화유산, 중국여행
-        </div>
+    <div class="hero-image">
+      <!-- 실제 이미지 경로로 교체해서 사용하세요 -->
+      <img src="great-wall.jpg" alt="만리장성 전경" />
+    </div>
+
+    <section>
+      <h2>1. 만리장성, 사진보다 ‘직접 서봤을 때’가 더 실감 나는 곳</h2>
+      <p>
+        만리장성은 교과서, 다큐, 사진으로 수없이 보던 장소인데도
+        실제로 눈앞에서 마주하면 다른 느낌으로 다가온다.
+        산등성이를 따라 끝없이 이어지는 장벽을 보다 보면,
+        <span class="highlight">“이걸 정말 사람이 쌓았다고?”</span> 하는 생각이 자연스럽게 든다.
+      </p>
+      <p>
+        장성 위에 서서 주변을 둘러보면, 산맥이 겹겹이 이어지고
+        그 위를 타고 흐르듯 벽이 펼쳐진다. 바람은 계속 불고 있는데
+        풍경은 묵직하게 고정된 것처럼 느껴지는, 묘한 정적이 있다.
+      </p>
+
+      <div class="info-box">
+        <h3>🧱 만리장성 기본 정보 한눈에 보기</h3>
+        <ul>
+          <li>위치: 중국 북부 전역을 따라 이어지는 방어벽</li>
+          <li>총 길이: 약 21,000km 이상 (추정)</li>
+          <li>대표 관광 구간: 바달링(八达岭), 무톈위(慕田峪), 진산링(金山岭) 등</li>
+          <li>유네스코 세계문화유산 등재</li>
+          <li>역할: 예전에는 외적 침입을 막기 위한 군사 방어선</li>
+        </ul>
+        <p class="tag-list">
+          <span class="tag">#중국여행</span>
+          <span class="tag">#세계문화유산</span>
+          <span class="tag">#만리장성</span>
+          <span class="tag">#트래킹</span>
+        </p>
       </div>
     </section>
 
-    <article>
-      <h2>1. 끝이 보이지 않는 성벽 위를 걷다</h2>
+    <section>
+      <h2>2. 북경 근교의 대표 코스, 바달링과 무톈위</h2>
       <p>
-        만리장성은 ‘길다’는 건 알고 있었지만,
-        실제로 성벽 위에 올라서서 양쪽을 바라보면
-        말 그대로 <strong>수평선까지 이어지는 돌길</strong>을 보게 됩니다.
-        구름과 산, 성벽이 한 화면에 들어와서
-        현실감이 잠시 사라지는 순간이 있어요.
+        만리장성 전체를 다 돌아볼 수는 없기 때문에, 대부분의 여행자는
+        <span class="highlight">북경(베이징) 근교 구간</span> 중 한 곳을 선택해서 다녀온다.
+        그 중에서도 가장 유명한 곳이 <strong>바달링</strong>과 <strong>무톈위(목전욕)</strong>이다.
+      </p>
+      <p>
+        두 구간 모두 장성의 분위기를 충분히 느낄 수 있지만,
+        <strong>사람이 많은 걸 싫어하는지, 자연 풍경을 더 보고 싶은지</strong>에 따라 선택이 갈리기도 한다.
       </p>
 
+      <h3>🧗 바달링(八达岭) – 가장 유명하고 정비가 잘 된 구간</h3>
       <p>
-        성벽 곳곳에 있는 망루에 올라가서 아래를 내려다보면,
-        당시 군사들이 이곳에서 어떤 마음으로 이 주변을 지켰을지 상상하게 됩니다.
+        바달링은 ‘만리장성 = 여기’라고 해도 될 정도로 대표적인 구간이다.
+        도로와 케이블카가 잘 연결되어 있고, 계단과 통로도 깔끔하게 정비되어 있어서
+        가족 여행이나 단체 관광으로도 많이 찾는다.
+      </p>
+      <p>
+        그만큼 사람도 많아서, 성수기나 휴일에는 장성 위에 사람 줄이 끝없이 이어진 모습이 보이기도 한다.
+        하지만 첫 만리장성이라면, <strong>“가장 전형적인 장성 풍경”</strong>을 만나기에 좋은 선택지다.
       </p>
 
-      <h2>2. 구간 선택이 중요한 이유</h2>
+      <h3>🌲 무톈위(慕田峪) – 조금 더 조용하고, 풍경이 아름다운 구간</h3>
       <p>
-        만리장성은 굉장히 길어서, 여행자들이 주로 찾는 구간이 따로 있습니다.
-        <strong>팔달령(Badaling)</strong>은 접근성이 좋아 가장 유명하고,
-        <strong>무텐위(Mutianyu)</strong> 구간은 상대적으로 한산하고 풍경이 좋기로 유명해요.
+        무톈위 구간은 바달링에 비해 상대적으로 덜 붐비고,
+        숲과 산맥의 조합이 더 풍부한 편이다.
+        장성 자체도 잘 복원되어 있고, 자연 풍경과 함께 담기는 사진도 예쁘게 나온다.
+      </p>
+      <p>
+        약간의 트래킹 느낌을 좋아하고, 사람에 치이는 느낌 없이
+        천천히 장성 위를 걷고 싶다면 무톈위 쪽을 고려해볼 만하다.
       </p>
 
-      <div class="tip-box">
-        <strong>TIP · 어떤 구간을 갈까?</strong>
-        ✔ 처음 방문이라면: 팔달령 (교통 편함, 시설 잘 되어 있음)<br />
-        ✔ 조금 더 한적한 풍경 원하면: 무텐위 추천
+      <div class="info-box">
+        <h3>📍 코스 선택 간단 가이드</h3>
+        <p class="tip">처음 방문 + 무난한 코스를 원하면 바달링.</p>
+        <p class="tip">사진·풍경·조금 더 여유로운 분위기를 원하면 무톈위.</p>
+        <p class="tip">시간 여유가 많다면, 서로 다른 느낌의 두 구간을 나눠서 가보는 것도 괜찮다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. ‘벽 위를 걷는 등산’에 가까운 경험</h2>
+      <p>
+        만리장성 위를 걷는 건 평평한 산책길을 걷는 느낌과는 조금 다르다.
+        장성은 대부분 산등성이를 따라 지어져 있기 때문에,
+        <strong>계단과 경사가 반복되는 구조</strong>인 경우가 많다.
+      </p>
+      <p>
+        구간에 따라서는 계단이 꽤 가파르고, 발판 높이가 제각각인 곳도 있어서
+        천천히 페이스를 유지하는 게 중요하다. 특히 내려갈 때는
+        눈으로 경사를 확인하면서 한 발씩 조심스럽게 딛는 게 좋다.
+      </p>
+
+      <h3>난이도 체감</h3>
+      <ul>
+        <li>‘가볍게 산책’보다는 ‘가벼운 등산’ 정도로 생각하는 게 편하다.</li>
+        <li>운동화를 꼭 추천, 구두나 샌들은 비추.</li>
+        <li>날씨가 더운 날에는 수분 보충에 신경 써야 한다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 장성 위에서 마주하게 되는 풍경과 감정</h2>
+      <p>
+        장성 위를 걷다 보면, 어느 순간 뒤를 돌아보고 싶어진다.
+        자신이 걸어온 길 뒤로, 산등성이를 따라 장성이 물결처럼 이어져 있기 때문이다.
+        그 장면이 주는 느낌은 단순히 “경치가 좋다”를 넘어선다.
+      </p>
+      <p>
+        <span class="highlight">“이 길 위를 수많은 사람들이 오르내리며 시대를 지나왔겠지”</span>라는 생각이 들면서,
+        발밑의 돌 한 장, 성벽의 흠집 하나까지도 오래된 시간이 묻어 있는 것처럼 느껴진다.
+        바람 소리, 사람들의 발자국 소리, 멀리 보이는 산맥의 라인이 한 화면에 겹쳐진다.
+      </p>
+
+      <h3>날씨에 따라 달라지는 분위기</h3>
+      <ul>
+        <li>맑은 날: 산맥과 성벽 라인이 또렷하게 드러나서 개방감이 크다.</li>
+        <li>약간 흐린 날: 구름과 산, 장성이 함께 어우러져 묘한 깊이가 생긴다.</li>
+        <li>안개 낀 날: 장성이 안개 속으로 사라져 버리는 듯해, 몽환적인 느낌이 강하다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 만리장성 여행 준비물 & 꿀팁</h2>
+      <p>
+        만리장성은 관광지이면서 동시에 야외 활동이기 때문에,
+        기본적인 준비만 잘해도 훨씬 덜 힘들고 더 즐겁게 다녀올 수 있다.
+      </p>
+
+      <div class="info-box">
+        <h3>🎒 챙겨가면 좋은 것들</h3>
+        <ul>
+          <li>발목이 편한 운동화 또는 트레킹화</li>
+          <li>계절에 맞는 겉옷 (산 위라 바람이 좀 더 세다)</li>
+          <li>생수 1~2병, 간단한 간식</li>
+          <li>선크림, 모자, 선글라스 (햇빛 강한 날 필수)</li>
+          <li>보조 배터리 (사진 많이 찍으면 배터리 빨리 닳음)</li>
+        </ul>
       </div>
 
-      <h2>3. 계단 하나하나가 운동</h2>
+      <p class="tip">계단이 많아 무릎에 부담이 될 수 있으니, 평소 무릎이 안 좋다면 속도를 더 줄이기.</p>
+      <p class="tip">이른 아침이나 늦은 오후 방문 시, 사진과 체감 온도 모두 더 쾌적하다.</p>
+      <p class="tip">날씨에 따라 풍경 분위기가 완전히 달라지니, 맑은 날/흐린 날 모두 각자 매력이 있다.</p>
+    </section>
+
+    <section>
+      <h2>6. 왜 여전히 ‘한 번쯤 꼭 가볼 만한 곳’일까?</h2>
       <p>
-        만리장성을 사진으로 보면 평평해 보이지만,
-        실제로 걸어보면 거의 등산에 가깝습니다.
-        계단 높이가 제각각이라서 발을 잘못 디디면 꽤 힘들 수 있어요.
+        만리장성은 단순히 “길고 거대한 벽”이 아니라,
+        <strong>인간이 만든 구조물과 자연 풍경이 한몸처럼 이어진 모습</strong>을 보여주는 장소다.
+      </p>
+      <p>
+        장성 위에서 멀리 산맥을 바라보고 있으면,
+        이 거대한 벽을 쌓아 올리던 사람들의 시간과,
+        지금 이 순간 장성 위를 걷고 있는 자신의 시간이 묘하게 겹쳐지는 기분이 든다.
+      </p>
+      <p>
+        여행이 끝나고 나면, 사진 속 장성 모습보다도
+        <span class="highlight">바람 부는 소리, 계단을 한 칸씩 올라갈 때의 숨소리,</span>
+        그리고 뒤를 돌아봤을 때 보였던 끝없는 장벽의 라인이 더 오래 기억에 남는다.
       </p>
 
-      <p>
-        대신 그만큼 한 발 한 발 올라갈 때마다
-        시야가 조금씩 넓어지고,
-        어느 순간 뒤를 돌아보면
-        “내가 저기에서부터 걸어왔다고?” 하는 감탄이 나옵니다.
-      </p>
+      <div class="info-box">
+        <h3>🔚 만리장성에서 진짜로 남는 것</h3>
+        <p>
+          결국 만리장성 여행에서 남는 건 “나는 거기를 걸어봤다”는 사실 그 자체다.
+          거대한 구조물 위를 직접 걸어본 기억은,
+          어느 순간 문득 떠올라도 묵직하게 마음에 남는 경험이 된다.
+        </p>
+        <p>
+          언젠가 다시 중국을 찾게 된다면, 같은 구간이든 다른 구간이든,
+          다시 한 번 장성 위에 올라 보게 될지도 모르겠다.
+        </p>
+      </div>
+    </section>
 
-      <h2>4. 사계절마다 다른 색의 성벽</h2>
-      <p>
-        봄에는 연둣빛 숲이 성벽과 어울리고,
-        여름에는 짙은 초록색이 성벽을 감싸는 느낌입니다.
-        가을에는 노란색과 붉은색 단풍이 함께 어우러져
-        영화 속 장면처럼 보이고,
-        겨울에는 눈 덮인 성벽이 흑백 사진처럼 보이기도 해요.
-      </p>
+    <div class="divider"></div>
 
-      <a class="back-link" href="index.html#asia">
-        ← 아시아 랜드마크 목록으로 돌아가기
-      </a>
-    </article>
+    <footer>
+      <p>© 2025 Great Wall Travel Log. All rights reserved.</p>
+      <p>만리장성 · Great Wall of China · 여행 블로그 HTML 템플릿</p>
+    </footer>
   </main>
-
-  <footer>
-    <div class="footer-inner">
-      <span>© 2025 World Landmarks Travel Blog</span>
-      <span>작성자: (닉네임)</span>
-    </div>
-  </footer>
 </body>
 </html>
