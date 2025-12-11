@@ -14,7 +14,7 @@
 	
   •	Asia (아시아)
   
-	•	Europe (유럽)
+•	Europe (유럽)
 	
   •	North America (북미)
 
