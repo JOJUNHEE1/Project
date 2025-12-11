@@ -2,257 +2,295 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>나이아가라 폭포 여행기 - 세계 랜드마크 블로그</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <title>나이아가라 폭포 여행기 - 물의 장막을 뚫고</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="미국과 캐나다의 국경, 나이아가라 폭포 여행 상세 후기. 혼블로워 유람선, 뷰포인트, 야경, 여행 꿀팁 정리." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* 그랜드 캐니언 블로그 스타일 기반 + 블루 테마 적용 */
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", sans-serif;
-      line-height: 1.7;
-      background: #f5f5f7;
-      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Malgun Gothic", system-ui, sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #2c3e50;
     }
-    a { color: inherit; text-decoration: none; }
 
     header {
-      background: linear-gradient(120deg, #4f46e5, #06b6d4);
+      /* 폭포의 물보라와 시원함을 상징하는 블루 그라디언트 */
+      background: linear-gradient(135deg, #0288d1, #26c6da, #4dd0e1);
       color: #fff;
-      padding: 1.8rem 1.5rem 1.3rem;
-      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
-      margin-bottom: 1.5rem;
+      padding: 3.5rem 1.5rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-    .header-inner {
-      max-width: 920px;
-      margin: 0 auto;
+
+    header h1 {
+      margin: 0 0 0.8rem;
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -1px;
     }
-    .site-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-    }
-    .breadcrumb {
-      margin-top: 0.45rem;
-      font-size: 0.85rem;
-      opacity: 0.9;
-    }
-    .breadcrumb a {
-      text-decoration: underline;
-      text-decoration-style: dotted;
+
+    header p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+      opacity: 0.95;
+      font-weight: 400;
     }
 
     main {
-      max-width: 920px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem 2rem;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
     }
 
-    .hero {
-      background: #ffffff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      margin-bottom: 1.8rem;
-    }
     .hero-image {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56%;
+      margin: 0 auto 3rem;
+      border-radius: 16px;
       overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      position: relative;
     }
+
     .hero-image img {
-      position: absolute;
       width: 100%;
-      height: 100%;
+      display: block;
+      height: auto;
+      min-height: 350px;
       object-fit: cover;
-      inset: 0;
-      filter: saturate(1.1);
-    }
-    .hero-body {
-      padding: 1.2rem 1.4rem 1.4rem;
-    }
-    .hero-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-    .hero-meta {
-      font-size: 0.88rem;
-      color: #6b7280;
+      background-color: #eee;
+      transform: scale(1.02);
     }
 
-    article {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.4rem 1.5rem 1.6rem;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      border: 1px solid rgba(148, 163, 184, 0.35);
+    h2 {
+      margin-top: 3.5rem;
+      margin-bottom: 1.2rem;
+      font-size: 1.55rem;
+      /* 강조색: 짙은 파랑 */
+      border-left: 5px solid #0288d1;
+      padding-left: 1rem;
+      color: #111;
+      letter-spacing: -0.5px;
     }
 
-    article h2 {
+    h3 {
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
       font-size: 1.25rem;
-      margin: 1.3rem 0 0.4rem;
-    }
-    article h2:first-of-type {
-      margin-top: 0;
+      color: #333;
     }
 
-    article p {
-      font-size: 0.96rem;
-      color: #374151;
-      margin-bottom: 0.75rem;
+    p {
+      margin: 0 0 1.2rem;
+      font-size: 1.05rem;
+      word-break: keep-all;
+      color: #444;
     }
 
-    .tip-box {
-      margin-top: 1rem;
-      padding: 0.9rem 1rem;
+    ul, ol {
+      margin: 0.5rem 0 1.5rem 1.5rem;
+      font-size: 1rem;
+      color: #444;
+    }
+    
+    li { margin-bottom: 0.5rem; }
+
+    .info-box {
+      background-color: #fff;
       border-radius: 12px;
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      font-size: 0.9rem;
-      color: #1f2937;
+      padding: 1.8rem;
+      margin: 2.5rem 0;
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
-    .tip-box strong { display: block; margin-bottom: 0.2rem; }
 
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-top: 1.4rem;
+    .info-box h3 {
+      margin-top: 0;
+      color: #0277bd; /* 타이틀 색상 변경 */
+      font-size: 1.2rem;
+    }
+
+    .tag-list {
+      margin-top: 1.5rem;
       font-size: 0.9rem;
-      color: #4f46e5;
-      text-decoration: underline;
-      text-decoration-style: dotted;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.35rem 0.8rem;
+      margin: 0 0.4rem 0.4rem 0;
+      border-radius: 50px;
+      /* 태그 색상: 연한 하늘색 배경 + 짙은 파랑 글씨 */
+      background-color: #e1f5fe;
+      color: #0277bd;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .tip {
+      position: relative;
+      padding-left: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .tip::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0.2rem;
+      color: #039be5; /* 체크 아이콘 색상 변경 */
+      font-weight: bold;
+    }
+
+    .highlight {
+      /* 형광펜 효과: 푸른빛 */
+      background: linear-gradient(120deg, rgba(179, 229, 252, 0.6) 0%, rgba(129, 212, 250, 0.6) 100%);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .divider {
+      margin: 4rem 0;
+      border-top: 1px dashed #ccc;
+    }
+
+    blockquote {
+      margin: 2rem 0;
+      padding: 1rem 1.5rem;
+      border-left: 4px solid #aaa;
+      background: #f1f1f1;
+      font-style: italic;
+      color: #555;
+      border-radius: 0 8px 8px 0;
     }
 
     footer {
-      border-top: 1px solid #e5e7eb;
-      padding: 1rem 1.5rem 2rem;
-      background: #f9fafb;
-      font-size: 0.84rem;
-      color: #6b7280;
-      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 2rem 1rem 4rem;
+      background: #fdfdfd;
+      border-top: 1px solid #eee;
     }
-    .footer-inner {
-      max-width: 920px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+      header { padding: 2.5rem 1.2rem; }
+      header h1 { font-size: 1.8rem; }
+      main { padding: 2rem 1.2rem 3rem; }
+      h2 { font-size: 1.4rem; }
     }
   </style>
 </head>
-
 <body>
 
-  <!-- HEADER -->
   <header>
-    <div class="header-inner">
-      <div class="site-title">세계 랜드마크 기록 블로그</div>
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> ·
-        <a href="index.html#north-america">북미</a> ·
-        나이아가라 폭포 여행기
-      </div>
-    </div>
+    <h1>나이아가라 폭포 여행기 🌊</h1>
+    <p>압도적인 물의 장막, 그 굉음 속으로</p>
+    <p>Niagara Falls, Canada & USA</p>
   </header>
 
-  <!-- MAIN -->
   <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1200&q=80"
-                   alt="나이아가라 폭포(대신 넣은 감성 텐트 사진)"
-                   style="width: 100%; height: 100%; object-fit: cover;" />
-      </div>
-      <div class="hero-body">
-        <h1 class="hero-title">나이아가라 폭포, 자연의 힘이 그대로 쏟아지는 순간</h1>
-        <div class="hero-meta">
-          미국 · 캐나다 국경 · Niagara Falls<br />
-          작성일: 2025-12-03 · 태그: 북미여행, 자연, 폭포
-        </div>
+    <div class="hero-image">
+      
+     <img src="https://images.unsplash.com/photo-1482003297000-b7663a17fa1e?auto=format&fit=crop&w=1200&q=80"
+                   alt="나이아가라 폭포의 거대한 물줄기" />
+    </div>
+
+    <section>
+      <h2>1. 가까워질수록 현실감이 사라졌다</h2>
+      <p>
+        처음엔 멀리서 들리는 웅웅거리는 소리가 빗소리인가 싶었다. 
+        공원을 가로질러 강가로 다가갈수록 그 소리는 굉음으로 변했고, 
+        하늘 위로 피어오르는 거대한 물안개 기둥이 시야를 가리기 시작했다.
+      </p>
+      <p>
+        난간에 섰을 때의 첫인상은 '크다'가 아니라 '두렵다'에 가까웠다.
+        초당 수천 톤의 물이 낭떠러지로 곤두박질치는 모습.
+        단순한 폭포가 아니라 <span class="highlight">지구가 뚫려서 물이 쏟아져 내리는 듯한 압도적인 힘</span>이었다.
+        특히 캐나다 쪽의 말발굽 폭포(Horseshoe Falls)는 둥글게 휘어진 지형 때문에, 
+        마치 내가 서 있는 땅까지 집어삼킬 듯이 물이 밀려왔다.
+      </p>
+
+      <div class="info-box">
+        <h3>🏞️ 나이아가라 폭포 방문 체크리스트</h3>
+        <ul>
+          <li><strong>위치:</strong> 미국 뉴욕주와 캐나다 온타리오주 국경</li>
+          <li><strong>뷰 포인트:</strong> 전체적인 뷰는 '캐나다 사이드'가 압승, 자연의 날것 느낌은 '미국 사이드'.</li>
+          <li><strong>준비물:</strong> 여권 (국경을 넘어가서 보는 것을 강력 추천), 잘 젖지 않는 신발.</li>
+          <li><strong>계절:</strong> 겨울에는 폭포 일부가 얼어 장관을 이루지만, 유람선은 5월~11월에만 운행한다.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- ARTICLE -->
-    <article>
-
-      <h2>1. 가까워질수록 더욱 거대한 풍경</h2>
+    <section>
+      <h2>2. 폭풍 속으로 뛰어드는 유람선</h2>
       <p>
-        나이아가라 폭포는 멀리서 보면 “물 좀 많이 떨어지네?” 싶은데,
-        가까이 갈수록 그 스케일이 말도 안 되게 커집니다.
-        수십만 톤의 물이 연속으로 떨어지며 만들어내는 굉음과 물보라는
-        단순한 폭포를 넘어서 <strong>자연의 압도적인 힘</strong> 자체예요.
-      </p>
-
-      <p>
-        특히 캐나다 쪽에서 바라보는 말발굽 폭포(Horseshoe Falls)는,
-        폭포 전체가 둥글게 휘어져 있어서 마치 물이 세상을 집어삼키는 것 같은 느낌을 줘요.
-      </p>
-
-      <h2>2. 배를 타고 물보라 속으로</h2>
-      <p>
-        나이아가라 폭포 여행에서 절대 빠질 수 없는 것이 바로
-        <strong>‘혼블로워(미국은 메이드 오브 더 미스트)’ 유람선</strong>입니다.
+        나이아가라에 와서 눈으로만 보고 가는 건 예고편만 본 것과 같다.
+        이곳의 진가는 배를 타고 폭포 바로 밑까지 들어가는 <strong>'혼블로워(Hornblower, 캐나다)'</strong> 혹은 <strong>'메이드 오브 더 미스트(Maid of the Mist, 미국)'</strong>를 탔을 때 드러난다.
       </p>
       <p>
-        배를 타고 폭포 바로 아래까지 접근하면,
-        눈을 뜨기도 힘들 만큼 강한 물보라가 쏟아져요.
-        다들 파란 비옷이나 빨간 비옷을 입고 있지만,
-        사실상 80%는 다 젖는다고 보면 됩니다 😂  
-        그래도 그 순간이 이 여행의 하이라이트예요.
+        배가 폭포 낙하지점에 가까워지면, 눈을 뜰 수 없을 정도의 비바람이 몰아친다.
+        방금 나눠준 우비는 아무 소용이 없다. 
+        사방에서 쏟아지는 물보라와 귓가를 때리는 굉음 속에서 사람들은 비명을 지르면서도 웃음을 터뜨린다.
+        마치 <span class="highlight">거대한 태풍의 눈 속으로 걸어 들어가는 듯한 짜릿함</span>은 평생 잊지 못할 경험이었다.
       </p>
-
-      <div class="tip-box">
-        <strong>TIP · 유람선 이용 팁</strong>
-        ✔ 비옷 주지만 거의 젖음 → 휴대폰 방수 케이스 추천<br />
-        ✔ 앞자리보다 옆/뒤가 물 덜 맞고 시야는 더 좋음<br />
-        ✔ 성수기엔 대기줄 김 → 아침 일찍 타는 게 최고
+      <blockquote>
+        "방수팩에 넣지 않은 모든 것은 젖는다. 
+        하지만 흠뻑 젖은 채 올려다본 폭포는 공포스러울 정도로 아름다웠다."
+      </blockquote>
+      
+      <div class="info-box">
+        <h3>🚢 유람선 생존 팁 (a.k.a 샤워 타임)</h3>
+        <p class="tip"><strong>자리 선정:</strong> 2층 난간 쪽은 뷰가 좋지만 물벼락을 정통으로 맞는다. 1층 중앙이 그나마 덜 젖는다.</p>
+        <p class="tip"><strong>촬영:</strong> 방수 기능이 없는 카메라는 절대 꺼내지 말 것. 휴대폰도 방수팩 필수.</p>
+        <p class="tip"><strong>복장:</strong> 나눠주는 우비가 얇다. 바지는 젖을 각오를 하고 샌들이나 슬리퍼를 추천.</p>
       </div>
+    </section>
 
-      <h2>3. 폭포 주변 트레일에서 느끼는 생생함</h2>
+    <section>
+      <h2>3. 밤이 되면 몽환적인 도시로 변신</h2>
       <p>
-        폭포 위쪽을 따라 걷는 트레일은 생각보다 잘 정비되어 있고,
-        걸을 때마다 물안개가 얼굴에 닿는 느낌이 색다릅니다.
-        특히 레인보우 브리지(Rainbow Bridge) 근처에서 보는 풍경은 완전 postcard 느낌!
+        그랜드 캐니언이 고요한 대자연이었다면, 나이아가라는 화려한 관광 도시다.
+        해가 지면 폭포를 향해 형형색색의 조명이 쏘아지는데, 
+        하얗게 부서지던 물거품이 보랏빛, 붉은빛으로 물드는 장면이 꽤 몽환적이다.
+      </p>
+      <p>
+        폭포 주변 트레일(산책로)을 따라 걸으면, 낮의 뜨거운 열기는 사라지고 시원한 물안개가 미스트처럼 얼굴에 내려앉는다.
+        근처 호텔 중 'Falls View' 룸을 잡았다면, 침대에 누워서 창밖으로 이 거대한 물줄기의 야경을 감상할 수 있다. 
+        (물론 가격은 사악하지만, 그만한 가치는 충분하다.)
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 자연이 주는 에너지</h2>
+      <p>
+        나이아가라는 도시 전체가 폭포 하나로 살아 숨 쉬는 느낌이었다.
+        어딜 가든 배경음악처럼 깔리는 물소리, 그리고 공기 중에 떠다니는 수분감.
+      </p>
+      <p>
+        미국 동부나 캐나다 여행을 계획 중이라면, 
+        단순히 "유명하니까 가봐야지"가 아니라, 
+        <strong>"압도적인 에너지를 충전하러 간다"</strong>는 마음으로 들러보길 바란다.
+        떨어지는 물줄기를 멍하니 바라보는 것만으로도 머릿속의 잡념이 씻겨 내려가는 기분을 느낄 수 있을 것이다.
       </p>
 
-      <p>
-        낮에는 밝고 시원한 느낌이라면,
-        밤에는 조명이 들어와서 완전히 다른 분위기를 보여줘요.
-        폭포가 보랏빛, 파란빛으로 물들면서 몽환적인 기분이 듭니다.
-      </p>
+      <div class="tag-list">
+        <span class="tag">#나이아가라폭포</span>
+        <span class="tag">#캐나다여행</span>
+        <span class="tag">#미국여행</span>
+        <span class="tag">#대자연</span>
+        <span class="tag">#혼블로워</span>
+      </div>
+    </section>
 
-      <h2>4. 한 도시가 폭포로 살아가는 느낌</h2>
-      <p>
-        나이아가라는 단순 관광지라기보다,
-        도시 전체가 이 폭포를 중심으로 살아가는 느낌이에요.
-        길을 걷다 보면 멀리서도 폭포 소리가 들리고,
-        호텔에서 창을 열면 물안개가 날아오는 곳도 있을 정도.
-      </p>
+    <div class="divider"></div>
 
-      <p>
-        만약 여유가 있다면, 캐나다 쪽 호텔에서 폭포 전망 방을 잡는 것도 강추!
-        밤마다 조명이 바뀌는 폭포를 침대에 누워서 볼 수 있어요.
-      </p>
-
-      <a class="back-link" href="index.html#north-america">
-        ← 북미 랜드마크 목록으로 돌아가기
-      </a>
-
-    </article>
+    <footer>
+      <p>© 2025 Niagara Travel Log. All rights reserved.</p>
+      <p>직접 다녀오고 작성한 여행 기록입니다. 사진의 무단 도용을 금합니다.</p>
+    </footer>
   </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-inner">
-      <span>© 2025 World Landmarks Travel Blog</span>
-      <span>작성자: (닉네임)</span>
-    </div>
-  </footer>
-
 </body>
 </html>
