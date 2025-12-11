@@ -204,6 +204,112 @@
       <div class="site-subtitle">
         북미 · 아시아 · 유럽의 대표 랜드마크들을 한 번에 둘러보는 여행 노트
       </div>
+<!-- 오늘의 랜드마크 위젯 시작 -->
+<section id="today-landmark" style="max-width: 480px; margin: 2rem auto; padding: 1.5rem; border-radius: 16px; border: 1px solid #e2e2e2; box-shadow: 0 8px 20px rgba(0,0,0,0.06); background: #ffffff;">
+  <h2 style="margin: 0 0 0.75rem; font-size: 1.4rem; font-weight: 700;">🌍 오늘의 랜드마크</h2>
+  <p style="margin: 0 0 1rem; font-size: 0.9rem; color: #555;">
+    어디부터 구경할지 고민될 때, 랜덤으로 한 곳을 추천해 드려요.
+  </p>
+
+  <div id="landmark-card" style="padding: 1rem; border-radius: 12px; background: #f7f7f9;">
+    <div style="font-size: 0.8rem; font-weight: 600; color: #666; margin-bottom: 0.25rem;" id="landmark-continent">🌏 아시아</div>
+    <div style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.3rem;" id="landmark-name">도쿄타워</div>
+    <div style="font-size: 0.9rem; color: #444; margin-bottom: 0.5rem;" id="landmark-location">도쿄, 일본</div>
+    <div style="font-size: 0.9rem; color: #555; margin-bottom: 0.5rem;" id="landmark-desc">
+      도쿄 야경을 360도 파노라마로 감상할 수 있는 붉은 철탑 전망대.
+    </div>
+    <div style="font-size: 0.8rem; color: #777;" id="landmark-tip">✨ 추천 포인트: 해질 무렵 ~ 야간 방문</div>
+  </div>
+
+  <button type="button"
+    onclick="pickRandomLandmark()"
+    style="margin-top: 1.1rem; width: 100%; padding: 0.7rem 1rem; border-radius: 999px; border: none; font-size: 0.95rem; font-weight: 600; cursor: pointer; background: #111827; color: #fff;">
+    랜드마크 다시 뽑기 🔀
+  </button>
+</section>
+
+<script>
+  const landmarks = [
+    {
+      name: "자유의 여신상",
+      continent: "북미",
+      location: "뉴욕, 미국",
+      desc: "뉴욕 항구를 지키는 상징적인 거대 조형물.",
+      tip: "리버티 아일랜드 페리 예약 필수!"
+    },
+    {
+      name: "그랜드 캐니언",
+      continent: "북미",
+      location: "애리조나, 미국",
+      desc: "수백만 년의 지층이 만든 자연의 압도적인 협곡.",
+      tip: "일출·일몰 시간대 뷰가 가장 압도적."
+    },
+    {
+      name: "나이아가라 폭포",
+      continent: "북미",
+      location: "미국·캐나다 국경",
+      desc: "세계에서 가장 유명한 대형 폭포 중 하나.",
+      tip: "안개 속 보트 투어(Maid of the Mist) 강력 추천!"
+    },
+    {
+      name: "경복궁",
+      continent: "아시아",
+      location: "서울, 대한민국",
+      desc: "조선 왕조의 법궁이자 서울 대표 고궁.",
+      tip: "한복 입고 방문하면 입장 무료!"
+    },
+    {
+      name: "만리장성",
+      continent: "아시아",
+      location: "베이징, 중국",
+      desc: "중국을 대표하는 거대한 방어 건축물.",
+      tip: "사람 적은 ‘무텐위’ 구간 추천."
+    },
+    {
+      name: "도쿄타워",
+      continent: "아시아",
+      location: "도쿄, 일본",
+      desc: "도쿄 도심을 밝히는 클래식한 붉은 철탑.",
+      tip: "야경 + 포토스팟 최고의 조합."
+    },
+    {
+      name: "에펠탑",
+      continent: "유럽",
+      location: "파리, 프랑스",
+      desc: "파리를 상징하는 랜드마크 중의 랜드마크.",
+      tip: "매 정시에 켜지는 조명 쇼 놓치지 말기!"
+    },
+    {
+      name: "콜로세움",
+      continent: "유럽",
+      location: "로마, 이탈리아",
+      desc: "고대 로마의 검투 경기장, 웅장함의 끝판왕.",
+      tip: "줄이 매우 길어서 사전 예약은 필수."
+    },
+    {
+      name: "사그라다 파밀리아",
+      continent: "유럽",
+      location: "바르셀로나, 스페인",
+      desc: "가우디가 설계한 미완성 대성당.",
+      tip: "대칭 구조 촬영하려면 내부 방문 추천."
+    }
+  ];
+
+  function pickRandomLandmark() {
+    const random = landmarks[Math.floor(Math.random() * landmarks.length)];
+    document.getElementById("landmark-name").textContent = random.name;
+    document.getElementById("landmark-continent").textContent = "🌍 " + random.continent;
+    document.getElementById("landmark-location").textContent = random.location;
+    document.getElementById("landmark-desc").textContent = random.desc;
+    document.getElementById("landmark-tip").textContent = "✨ 추천 포인트: " + random.tip;
+  }
+
+  document.addEventListener("DOMContentLoaded", pickRandomLandmark);
+</script>
+<!-- 오늘의 랜드마크 위젯 끝 -->
+
+
+
       <nav>
         <div class="nav-links">
           <a href="#north-america">북미</a>
