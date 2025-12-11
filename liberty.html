@@ -2,255 +2,307 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>자유의 여신상 여행기 - 세계 랜드마크 블로그</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자유의 여신상 여행기 - 뉴욕의 심장을 마주하다</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="뉴욕 여행의 상징, 자유의 여신상(Statue of Liberty) 리얼 후기. 페리 예약 꿀팁, 박물관, 크라운 전망대, 그리고 맨해튼 뷰 포인트까지." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    /* 그랜드 캐니언/나이아가라 스타일 기반 + 여신상 옥색(Teal) 테마 적용 */
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.7;
-      background: #f5f5f7;
-      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Malgun Gothic", system-ui, sans-serif;
+      line-height: 1.85;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #2c3e50;
     }
-    a { color: inherit; text-decoration: none; }
 
     header {
-      background: linear-gradient(120deg, #4f46e5, #06b6d4);
+      /* 여신상의 구리빛 산화색(Jade/Teal) 그라디언트 */
+      background: linear-gradient(135deg, #00897b, #26a69a, #4db6ac);
       color: #fff;
-      padding: 1.8rem 1.5rem 1.3rem;
-      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
-      margin-bottom: 1.5rem;
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-    .header-inner {
-      max-width: 920px;
-      margin: 0 auto;
+
+    header h1 {
+      margin: 0 0 1rem;
+      font-size: 2.3rem;
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      line-height: 1.2;
     }
-    .site-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-    }
-    .breadcrumb {
-      margin-top: 0.45rem;
-      font-size: 0.85rem;
-      opacity: 0.9;
-    }
-    .breadcrumb a {
-      text-decoration: underline;
-      text-decoration-style: dotted;
+
+    header p {
+      margin: 0.4rem 0;
+      font-size: 1.05rem;
+      opacity: 0.95;
+      font-weight: 400;
     }
 
     main {
-      max-width: 920px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem 2rem;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
     }
 
-    .hero {
-      background: #ffffff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      margin-bottom: 1.8rem;
-    }
     .hero-image {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56%;
+      margin: 0 auto 3.5rem;
+      border-radius: 16px;
       overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      position: relative;
     }
+
     .hero-image img {
-      position: absolute;
       width: 100%;
-      height: 100%;
+      display: block;
+      height: auto;
+      min-height: 400px;
       object-fit: cover;
-      inset: 0;
-      filter: saturate(1.1);
-    }
-    .hero-body {
-      padding: 1.2rem 1.4rem 1.4rem;
-    }
-    .hero-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-    .hero-meta {
-      font-size: 0.88rem;
-      color: #6b7280;
+      background-color: #eee;
+      transform: scale(1.02);
     }
 
-    article {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.4rem 1.5rem 1.6rem;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      border: 1px solid rgba(148, 163, 184, 0.35);
+    h2 {
+      margin-top: 4rem;
+      margin-bottom: 1.4rem;
+      font-size: 1.65rem;
+      /* 강조색: 짙은 청록색 */
+      border-left: 5px solid #00695c;
+      padding-left: 1.2rem;
+      color: #111;
+      letter-spacing: -0.5px;
     }
 
-    article h2 {
-      font-size: 1.25rem;
-      margin: 1.3rem 0 0.4rem;
+    h3 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: #333;
     }
-    article h2:first-of-type {
+
+    p {
+      margin: 0 0 1.4rem;
+      font-size: 1.08rem;
+      word-break: keep-all;
+      color: #444;
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1.8rem 1.8rem;
+      font-size: 1.05rem;
+      color: #444;
+    }
+    
+    li { margin-bottom: 0.7rem; }
+
+    .info-box {
+      background-color: #fff;
+      border-radius: 14px;
+      padding: 2rem;
+      margin: 3rem 0;
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    }
+
+    .info-box h3 {
       margin-top: 0;
+      color: #00796b;
+      font-size: 1.25rem;
+      border-bottom: 2px solid #e0f2f1;
+      padding-bottom: 0.8rem;
+      margin-bottom: 1.2rem;
+      display: inline-block;
     }
 
-    article p {
-      font-size: 0.96rem;
-      color: #374151;
-      margin-bottom: 0.75rem;
+    .tag-list {
+      margin-top: 2rem;
+      font-size: 0.95rem;
     }
 
-    .tip-box {
-      margin-top: 1rem;
-      padding: 0.9rem 1rem;
-      border-radius: 12px;
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
+    .tag {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      margin: 0 0.5rem 0.5rem 0;
+      border-radius: 50px;
+      /* 태그 색상: 아주 연한 민트 배경 + 짙은 청록 글씨 */
+      background-color: #e0f2f1;
+      color: #00695c;
+      font-weight: 600;
       font-size: 0.9rem;
-      color: #1f2937;
+      transition: all 0.2s;
     }
-    .tip-box strong { display: block; margin-bottom: 0.2rem; }
 
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-top: 1.4rem;
-      font-size: 0.9rem;
-      color: #4f46e5;
-      text-decoration: underline;
-      text-decoration-style: dotted;
+    .tip {
+      position: relative;
+      padding-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .tip::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0.2rem;
+      color: #00897b;
+      font-weight: bold;
+    }
+
+    .highlight {
+      /* 형광펜 효과: 민트색 */
+      background: linear-gradient(120deg, rgba(178, 223, 219, 0.6) 0%, rgba(128, 203, 196, 0.6) 100%);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-weight: 600;
+      box-decoration-break: clone;
+    }
+
+    .divider {
+      margin: 5rem 0;
+      border-top: 1px dashed #ccc;
+    }
+
+    blockquote {
+      margin: 2.5rem 1rem;
+      padding: 1.2rem 1.8rem;
+      border-left: 5px solid #4db6ac;
+      background: #f0fdfc;
+      font-style: italic;
+      color: #455a64;
+      border-radius: 0 10px 10px 0;
+      font-size: 1.1rem;
     }
 
     footer {
-      border-top: 1px solid #e5e7eb;
-      padding: 1rem 1.5rem 2rem;
-      background: #f9fafb;
-      font-size: 0.84rem;
-      color: #6b7280;
-      margin-top: 1.5rem;
-    }
-    .footer-inner {
-      max-width: 920px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #888;
+      padding: 2rem 1rem 5rem;
+      background: #fdfdfd;
+      border-top: 1px solid #eee;
     }
 
-    @media (max-width: 640px) {
-      header { padding: 1.4rem 1.1rem 1rem; }
-      main { padding: 0 1.1rem 2rem; }
-      .hero-body { padding: 1rem 1.1rem 1.2rem; }
-      article { padding: 1.1rem 1.1rem 1.3rem; }
-      .hero-title { font-size: 1.35rem; }
+    @media (max-width: 600px) {
+      header { padding: 3rem 1.2rem; }
+      header h1 { font-size: 1.8rem; }
+      main { padding: 2rem 1.2rem 3rem; }
+      h2 { font-size: 1.45rem; }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="header-inner">
-      <div class="site-title">세계 랜드마크 기록 블로그</div>
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> ·
-        <a href="index.html#north-america">북미</a> ·
-        자유의 여신상 여행기
-      </div>
-    </div>
+    <h1>자유의 여신상 여행기 🗽</h1>
+    <p>영화 속 그 장면, 뉴욕의 관문을 통과하다</p>
+    <p>Statue of Liberty, New York</p>
   </header>
 
   <main>
-    <!-- 대표 이미지 + 제목 -->
-    <section class="hero">
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?auto=format&fit=crop&w=1200&q=80"
-                   alt="뉴욕 자유의 여신상 전경" />
-      </div>
-      <div class="hero-body">
-        <h1 class="hero-title">뉴욕 자유의 여신상, 배를 타고 다가가 본 첫인상</h1>
-        <div class="hero-meta">
-          미국 · 뉴욕 · Statue of Liberty<br />
-          작성일: 2025-12-03 · 태그: 뉴욕, 미국여행, 랜드마크
-        </div>
+    <div class="hero-image">
+     <img src="https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?auto=format&fit=crop&w=1200&q=80"
+                   alt="뉴욕 자유의 여신상과 푸른 하늘" />
+    </div>
+
+    <section>
+      <h2>1. 맨해튼을 등지고 바다로 나가는 기분</h2>
+      <p>
+        미디어에서 너무 많이 봐왔기 때문에 실제로 보면 감흥이 덜할 것이라는 내 예상은, 배터리 파크(Battery Park)에서 페리에 오르는 순간 기분 좋게 빗나갔다.
+        빌딩 숲으로 꽉 막힌 맨해튼을 잠시 벗어나 바다를 향해 나아가는 과정 자체가 여행의 일부였다.
+      </p>
+      <p>
+        배가 항구를 떠나고 서서히 도시의 소음이 파도 소리에 묻힐 때쯤, 저 멀리 아주 작게만 보이던 횃불이 점점 거대해지기 시작했다.
+        스마트폰 줌으로 당겨서 보던 그 형체가 내 시야를 가득 채우는 압도적인 크기로 다가왔을 때, 
+        비로소 내가 <strong>'미국 여행의 상징'</strong> 앞에 서 있다는 실감이 났다.
+        사람들의 들뜬 목소리와 쉴 새 없이 터지는 카메라 셔터 소리마저 활기차게 느껴졌다.
+      </p>
+
+      <div class="info-box">
+        <h3>🛳️ 리버티 섬(Liberty Island) 방문 체크리스트</h3>
+        <ul>
+          <li><strong>공식 페리:</strong> 'Statue City Cruises'만 섬에 정박한다. (무료인 스태튼 아일랜드 페리는 그냥 지나쳐 가니 주의!)</li>
+          <li><strong>보안 검색:</strong> 공항 수준으로 철저하다. 짐은 최대한 가볍게 가져가는 것이 상책.</li>
+          <li><strong>티켓 종류:</strong> 
+            <ul>
+              <li>일반 입장(General Admission): 섬 입장 + 야외 관람</li>
+              <li>발판 입장(Pedestal Reserve): 여신상 발밑 박물관 + 전망대 포함</li>
+              <li>왕관 입장(Crown Reserve): 머리 부분까지 올라감 (수개월 전 예약 필수)</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- 블로그 본문 -->
-    <article>
-      <h2>1. 영화 속 장면이 현실로 나타나는 순간</h2>
+    <section>
+      <h2>2. 가까이서 봐야 보이는 세월의 흔적</h2>
       <p>
-        뉴욕 자유의 여신상은 너무 많이 봐서 오히려 새로울 게 없을 줄 알았는데,
-        맨해튼을 떠나 배를 타고 조금씩 다가갈수록 생각보다 훨씬 거대하고 묵직한 느낌이었습니다.
-        멀리서 볼 땐 그냥 ‘상징물’처럼 느껴지다가, 가까이 가면 진짜로 <strong>한 도시를 지키는 수호자</strong> 같아요.
+        섬에 내려 여신상의 발치까지 걸어가는 길은 생각보다 웅장했다.
+        멀리서 볼 때는 매끈한 옥색 조각상 같았지만, 가까이서 본 여신상은 거친 구리 판들이 겹겹이 이어 붙여진 
+        <span class="highlight">거대하고 정교한 건축물</span>에 가까웠다.
       </p>
       <p>
-        특히 섬에 가까워질수록 사람들 표정이 하나씩 바뀌는 게 인상적이었어요.
-        시끄럽게 떠들던 사람들도 어느 순간 조용해지고, 다들 카메라를 내리고 눈으로 한 번 더 보는 느낌이었달까.
+        옷자락의 주름 하나하나가 엄청난 두께감을 가지고 있었고, 
+        오랜 시간 바닷바람을 맞으며 산화되어 만들어진 특유의 청록색은 인공적인 페인트로는 흉내 낼 수 없는 깊이감을 보여주었다.
+        단순히 '자유'를 상징하는 오브제를 넘어, 이 자리를 100년 넘게 지켜온 수호자의 묵직한 오라(Aura)가 느껴졌다.
       </p>
+      <blockquote>
+        "횃불을 든 오른팔의 근육, 단호하게 다문 입매.
+        가까이서 본 그녀는 온화하다기보다 강인해 보였다."
+      </blockquote>
+    </section>
 
-      <h2>2. 배를 타고 가는 과정부터 여행의 일부</h2>
+    <section>
+      <h2>3. 박물관과 페데스탈(Pedestal), 숨겨진 이야기</h2>
       <p>
-        자유의 여신상은 그냥 ‘앞에서 보는 조형물’이 아니라,
-        <strong>배를 타고 왕복해야 한다</strong>는 점에서 이미 작은 크루즈 여행 같은 기분을 줍니다.
-        맨해튼 남쪽 배터리 파크 근처에서 티켓을 끊고, 보안 검사를 통과한 뒤 배에 오르면
-        뉴욕 스카이라인이 점점 멀어지면서 다른 도시를 향해 떠나는 기분이 들어요.
+        많은 사람들이 여신상 외관만 보고 돌아가지만, <strong>박물관(Museum)</strong>은 꼭 들러보길 추천한다.
+        이 거대한 동상이 프랑스에서 어떻게 제작되어 조각조각 배로 실려왔는지, 
+        그리고 원래의 횃불(현재 들고 있는 것은 교체된 것)이 얼마나 영롱하게 빛났었는지 실물을 볼 수 있다.
       </p>
       <p>
-        날씨가 좋다면 2층 야외 데크에 서서 바람 맞으면서 가는 걸 추천합니다.
-        한쪽에는 맨해튼의 빽빽한 빌딩 숲, 다른 한쪽에는 점점 커지는 자유의 여신상이 동시에 보이거든요.
-        사진을 찍기에도, 그냥 멍하니 서 있기에도 둘 다 좋은 시간입니다.
+        페데스탈(발받침) 전망대에 올라가면 여신상의 치맛자락 바로 아래에서 위를 올려다볼 수 있는데, 
+        이 각도에서 보는 뷰가 꽤 이색적이다. 목이 좀 아프긴 하지만, 그녀의 발가락(?)과 옷 주름의 디테일을 가장 적나라하게 볼 수 있는 위치다.
       </p>
-
-      <div class="tip-box">
-        <strong>TIP · 티켓 예매와 시간대 선택</strong>
-        자유의 여신상 방문은 사람 정말 많아요. 특히 성수기에는 오전 일찍 타임대를 미리 예매해 두는 걸 추천합니다.
-        너무 늦은 시간에 가면 섬에서 충분히 머물 시간이 줄어들 수 있어요.
+      
+      <div class="info-box">
+        <h3>📸 인생샷을 위한 꿀팁</h3>
+        <p class="tip"><strong>배 오른쪽 사수:</strong> 갈 때는 배의 오른쪽(Starboard) 난간에 서야 여신상이 다가오는 모습을 정면으로 담을 수 있다.</p>
+        <p class="tip"><strong>로우 앵글:</strong> 섬에서는 여신상이 워낙 커서 인물과 함께 담기 힘들다. 카메라를 최대한 낮추고 하늘을 배경으로 찍자.</p>
+        <p class="tip"><strong>돌아오는 배:</strong> 여신상을 등지고 멀어지는 맨해튼 스카이라인을 배경으로 찍는 사진이 의외의 베스트 컷.</p>
       </div>
+    </section>
 
-      <h2>3. 섬에 내려서 바라본 여신상의 디테일</h2>
+    <section>
+      <h2>4. 다시 도시로 돌아오며</h2>
       <p>
-        막상 섬에 내려서 동상 근처까지 걸어가면, 우리가 사진으로 보던 각도와는 전혀 다른 디테일들이 보입니다.
-        구리로 덮인 표면의 색감, 옷 주름처럼 표현된 판넬, 토치(횃불) 부분의 구조 등
-        멀리서 볼 땐 알 수 없던 부분들이 하나씩 눈에 들어와요.
+        관람을 마치고 다시 맨해튼으로 돌아오는 배 위에서, 사람들은 약속이라도 한 듯 뒤를 돌아본다.
+        점점 멀어지는 자유의 여신상과, 반대로 점점 가까워지는 월드트레이드센터와 마천루들.
+        이 두 풍경이 교차하는 순간이 뉴욕 여행 중 가장 영화 같은 장면 중 하나였다.
       </p>
       <p>
-        정면에서만 보는 것보다, 살짝 옆이나 뒤쪽까지 돌아가 보기를 추천합니다.
-        여신상이 어느 방향을 바라보고 있는지, 섬 주변에서 보이는 바다와 도시의 구도가 조금씩 달라지는 걸 느끼다 보면,
-        ‘사진 한 장 찍고 끝’이 아니라 <strong>공간 전체를 경험하는 기분</strong>이 들 거예요.
-      </p>
-
-      <h2>4. 맨해튼을 향해 돌아가는 길, 마지막 한 번 더</h2>
-      <p>
-        돌아오는 배에서는 자연스럽게 여신상을 등지고 맨해튼을 바라보게 됩니다.
-        그런데 배가 섬을 떠나 멀어질 때, 사람들이 한 번 더 뒤를 돌아보는 장면이 꼭 나오더라고요.
-        뉴욕이라는 도시를 맞이하는 관문 같은 느낌이 남아서 그런 것 같아요.
-      </p>
-      <p>
-        개인적으로는, 밤보다는 <strong>맑은 낮 시간대</strong>에 가는 걸 더 좋아합니다.
-        하늘 색과 바다, 도시, 그리고 여신상의 색이 제일 잘 어울리는 시간이기 때문이에요.
+        과거 수많은 이민자들이 이 배 위에서 저 횃불을 보며 어떤 희망을 품었을지 상상해 보았다.
+        화려한 타임스퀘어도 좋지만, 
+        <strong>"뉴욕에 왔다"</strong>는 사실을 가장 진하게 느끼고 싶다면, 
+        번거롭더라도 배를 타고 이 섬에 들어와 볼 가치는 충분하다.
       </p>
 
-      <div class="tip-box">
-        <strong>정리 · 이런 사람에게 추천</strong>
-        뉴욕에 처음 가는 사람이라면 한 번쯤은 꼭 가볼 만한 곳입니다.
-        ‘관광지 같다’는 이유로 건너뛰기엔, 실제로 섬에 서서 도시를 바라보는 경험이 꽤 특별해요.
-        다만, 동선이 제법 길고 보안 검사도 있어서 반나절 정도는 여유 있게 잡는 걸 추천합니다.
+      <div class="tag-list">
+        <span class="tag">#뉴욕여행</span>
+        <span class="tag">#자유의여신상</span>
+        <span class="tag">#미국동부</span>
+        <span class="tag">#맨해튼</span>
+        <span class="tag">#랜드마크</span>
+        <span class="tag">#페리여행</span>
       </div>
+    </section>
 
-      <a class="back-link" href="index.html#north-america">
-        ← 북미 랜드마크 목록으로 돌아가기
-      </a>
-    </article>
+    <div class="divider"></div>
+
+    <footer>
+      <p>© 2025 NY Statue Travel Log. All rights reserved.</p>
+      <p>직접 다녀오고 작성한 여행 기록입니다. 사진의 무단 도용을 금합니다.</p>
+    </footer>
   </main>
-
-  <footer>
-    <div class="footer-inner">
-      <span>© 2025 World Landmarks Travel Blog</span>
-      <span>작성자: (여기에 닉네임)</span>
-    </div>
-  </footer>
 </body>
 </html>
