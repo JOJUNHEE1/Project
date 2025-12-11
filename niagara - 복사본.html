@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>나이아가라 폭포 여행기 - 쏟아지는 물의 제국</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="미국과 캐나다의 국경, 나이아가라 폭포 상세 여행기. 혼블로워, 저니 비하인드 더 폴스, 클리프턴 힐 야경까지 완벽 정리." />
+  <style>
+    /* 그랜드 캐니언 블로그 스타일 기반 + 블루 테마 적용 */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Malgun Gothic", system-ui, sans-serif;
+      line-height: 1.85; /* 글이 길어진 만큼 가독성을 위해 줄간격 미세 조정 */
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #2c3e50;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0288d1, #26c6da, #4dd0e1);
+      color: #fff;
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0 0 1rem;
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -1.2px;
+      line-height: 1.2;
+    }
+
+    header p {
+      margin: 0.4rem 0;
+      font-size: 1.05rem;
+      opacity: 0.95;
+      font-weight: 400;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    .hero-image {
+      margin: 0 auto 3.5rem;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      display: block;
+      height: auto;
+      min-height: 400px;
+      object-fit: cover;
+      background-color: #eee;
+      transform: scale(1.02);
+    }
+
+    h2 {
+      margin-top: 4rem;
+      margin-bottom: 1.4rem;
+      font-size: 1.65rem;
+      border-left: 5px solid #0288d1;
+      padding-left: 1.2rem;
+      color: #111;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    p {
+      margin: 0 0 1.4rem;
+      font-size: 1.08rem;
+      word-break: keep-all;
+      color: #444;
+      text-align: justify; /* 양쪽 정렬로 긴 글을 깔끔하게 */
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1.8rem 1.8rem;
+      font-size: 1.05rem;
+      color: #444;
+    }
+    
+    li { margin-bottom: 0.7rem; }
+
+    .info-box {
+      background-color: #fff;
+      border-radius: 14px;
+      padding: 2rem;
+      margin: 3rem 0;
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+      color: #0277bd;
+      font-size: 1.25rem;
+      border-bottom: 2px solid #e1f5fe;
+      padding-bottom: 0.8rem;
+      margin-bottom: 1.2rem;
+      display: inline-block;
+    }
+
+    .tag-list {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.4rem 0.9rem;
+      margin: 0 0.5rem 0.5rem 0;
+      border-radius: 50px;
+      background-color: #e1f5fe;
+      color: #0277bd;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+
+    .tip {
+      position: relative;
+      padding-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .tip::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0.2rem;
+      color: #039be5;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, rgba(179, 229, 252, 0.5) 0%, rgba(129, 212, 250, 0.5) 100%);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-weight: 600;
+      box-decoration-break: clone;
+    }
+
+    .divider {
+      margin: 5rem 0;
+      border-top: 1px dashed #ccc;
+    }
+
+    blockquote {
+      margin: 2.5rem 1rem;
+      padding: 1.2rem 1.8rem;
+      border-left: 5px solid #81d4fa;
+      background: #f8fdff;
+      font-style: italic;
+      color: #546e7a;
+      border-radius: 0 10px 10px 0;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #888;
+      padding: 2rem 1rem 5rem;
+      background: #fdfdfd;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 3rem 1.2rem; }
+      header h1 { font-size: 1.8rem; }
+      main { padding: 2rem 1.2rem 3rem; }
+      h2 { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>나이아가라 폭포 여행기 🌊</h1>
+    <p>압도적인 물의 제국, 그 거대한 굉음 속으로</p>
+    <p>Niagara Falls, Canada & USA</p>
+  </header>
+
+  <main>
+    <div class="hero-image">
+     <img src="niagara.webp"
+                   alt="나이아가라 폭포"
+                   style="width: 100%; height: 100%; object-fit: cover;" />
+    </div>
+
+    <section>
+      <h2>1. 가까워질수록 현실감이 사라졌다</h2>
+      <p>
+        토론토에서 버스를 타고 약 1시간 반. 창밖 풍경이 평화로운 시골 마을에서 점차 관광지의 북적거림으로 바뀔 때쯤, 귀보다 먼저 피부가 반응했다. 
+        처음엔 멀리서 들리는 웅웅거리는 낮은 진동이 도로의 소음인가 싶었지만, 공원에 들어서자마자 그것이 착각이 아님을 깨달았다.
+      </p>
+      <p>
+        뷰포인트인 '테이블 락(Table Rock)'을 향해 걸어가는 길, 하늘 위로 피어오르는 거대한 물안개 기둥이 시야를 가리기 시작했다. 
+        마치 구름 공장에서 쉴 새 없이 구름을 찍어내는 듯한 모습이었다. 
+        난간에 기대어 아래를 내려다본 순간, 첫인상은 '아름답다'가 아니라 <strong>'두렵다'</strong>에 가까웠다.
+      </p>
+      <p>
+        초당 수천 톤의 물이 낭떠러지로 곤두박질치는 모습. 
+        단순한 폭포가 아니라 <span class="highlight">지구가 뚫려서 세상의 모든 물이 쏟아져 내리는 듯한 압도적인 힘</span>이었다. 
+        특히 캐나다 쪽의 <strong>말발굽 폭포(Horseshoe Falls)</strong>는 둥글게 휘어진 지형 때문에, 시선의 어디를 봐도 물이 나를 향해 밀려드는 느낌을 주어 현기증이 날 정도였다.
+      </p>
+
+      <div class="info-box">
+        <h3>🏞️ 나이아가라 폭포 방문 체크리스트</h3>
+        <ul>
+          <li><strong>위치:</strong> 미국 뉴욕주와 캐나다 온타리오주 국경을 흐르는 나이아가라 강.</li>
+          <li><strong>뷰 포인트 비교:</strong>
+            <ul>
+              <li>🇨🇦 <strong>캐나다 사이드:</strong> 폭포의 파노라마 뷰를 정면에서 감상 가능. (압도적 추천)</li>
+              <li>🇺🇸 <strong>미국 사이드:</strong> 폭포 바로 옆이나 위에서 떨어지는 물을 근접 관찰 가능. (날것의 느낌)</li>
+            </ul>
+          </li>
+          <li><strong>준비물:</strong> 여권 (도보로 국경을 넘는 '레인보우 브릿지' 체험 가능), 미끄럽지 않고 젖어도 되는 신발.</li>
+          <li><strong>계절:</strong> 겨울에는 폭포 주변이 얼어붙어 장관을 이루지만, 유람선 등 액티비티는 5월~11월에만 운행한다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. 폭풍 속으로 뛰어드는 유람선</h2>
+      <p>
+        나이아가라에 와서 전망대에서 눈으로만 보고 가는 건 예고편만 보고 영화관을 나오는 것과 같다.
+        이곳의 진가는 배를 타고 폭포가 떨어지는 바로 그 지점, 낙하 지점(Drop zone)까지 들어갔을 때 비로소 드러난다.
+        캐나다에서는 <strong>'혼블로워(Hornblower)'</strong>, 미국에서는 <strong>'메이드 오브 더 미스트(Maid of the Mist)'</strong>라고 불리는 이 유람선은 필수 코스다.
+      </p>
+      <p>
+        빨간색(캐나다) 혹은 파란색(미국) 우비를 입고 배에 오를 때까지만 해도 사람들은 웃으며 셀카를 찍는다. 
+        하지만 배가 폭포 깊숙이 진입하는 순간, 상황은 재난 영화로 바뀐다.
+        눈을 뜰 수 없을 정도의 강력한 비바람이 사방에서 몰아치고, 우비는 사실상 무용지물이 된다.
+      </p>
+      <p>
+        거대한 물벽 앞에 섰을 때의 그 공포와 전율. 
+        사방에서 쏟아지는 물보라와 귓가를 때리는 굉음 속에서 사람들은 비명을 지르면서도 아이처럼 웃음을 터뜨린다.
+        마치 <span class="highlight">거대한 태풍의 눈 속으로 제 발로 걸어 들어가는 듯한 짜릿함</span>은 평생 잊지 못할 강렬한 경험이었다.
+      </p>
+      <blockquote>
+        "방수팩에 넣지 않은 모든 것은 젖는다. 
+        하지만 흠뻑 젖은 채 올려다본 폭포는 공포스러울 정도로 아름다웠다. 
+        자연 앞에서 인간이 얼마나 작은 존재인지 온몸으로 샤워하며 깨닫는 순간이었다."
+      </blockquote>
+      
+      <div class="info-box">
+        <h3>🚢 유람선 생존 팁 (a.k.a 워터파크)</h3>
+        <p class="tip"><strong>자리 선정:</strong> 2층 난간 쪽은 뷰가 좋지만 물벼락을 정통으로 맞는다. 사진보다는 '체험'을 원하면 2층 앞, 조금이라도 덜 젖고 싶다면 1층 중앙 혹은 유리창 뒤가 좋다.</p>
+        <p class="tip"><strong>촬영 주의:</strong> 고가의 카메라는 절대 꺼내지 말 것. 방수 기능이 있는 액션캠이나 방수팩을 씌운 휴대폰만 사용해야 한다.</p>
+        <p class="tip"><strong>복장:</strong> 나눠주는 우비가 생각보다 얇고 짧다. 바지와 신발은 무조건 젖는다고 생각하고, 샌들이나 슬리퍼를 추천한다.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. 폭포의 뒷면을 훔쳐보다 (Journey Behind the Falls)</h2>
+      <p>
+        유람선이 폭포의 겉면을 핥는 경험이라면, <strong>'저니 비하인드 더 폴스(Journey Behind the Falls)'</strong>는 폭포의 속살을 파고드는 경험이다.
+        엘리베이터를 타고 지하 40미터 암반으로 내려가 100년 넘은 터널을 통과하면, 엄청난 진동이 발바닥을 타고 올라온다.
+      </p>
+      <p>
+        터널 끝에 뚫려 있는 구멍을 통해 폭포가 떨어지는 바로 뒤쪽을 볼 수 있는데, 시야에 보이는 건 오직 하얀 물의 장막뿐이다.
+        하지만 그 소리는 상상을 초월한다. 마치 수십 대의 전투기가 동시에 이륙하는 듯한 굉음이 동굴 전체를 울린다. 
+        밖에서 보는 우아한 폭포가 백조라면, 안에서 느끼는 폭포는 물갈퀴를 젓는 괴수 같았다.
+        자연의 힘을 시각이 아닌 '청각'과 '진동'으로 느끼고 싶다면 이 투어를 강력히 추천한다.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 밤이 되면 몽환적인 유원지로 변신</h2>
+      <p>
+        해가 지면 나이아가라는 또 다른 얼굴을 드러낸다. 
+        그랜드 캐니언이 밤이 되면 칠흑 같은 어둠 속 고요한 대자연으로 돌아가는 것과 달리, 
+        나이아가라는 화려한 네온사인이 번쩍이는 거대한 테마파크로 변신한다.
+      </p>
+      <p>
+        폭포를 향해 형형색색의 조명이 쏘아지는데, 낮에는 하얗게 부서지던 물거품이 보랏빛, 붉은빛으로 물드는 장면이 꽤 몽환적이다. 
+        특히 폭포 바로 뒤편에 있는 <strong>'클리프턴 힐(Clifton Hill)'</strong> 거리는 라스베이거스를 축소해 놓은 듯한 유원지 분위기다.
+        관람차, 귀신의 집, 오락실이 즐비한 거리를 걷다가 문득 뒤를 돌아보면 거대한 폭포가 흐르고 있는 이질적인 풍경이 나이아가라만의 매력이다.
+      </p>
+      <p>
+        폭포 주변 트레일(산책로)을 따라 밤산책을 하면, 낮의 뜨거운 열기는 사라지고 시원한 물안개가 미스트처럼 얼굴에 내려앉는다.
+        운이 좋다면 밤하늘을 수놓는 불꽃놀이를 폭포 배경으로 감상할 수도 있다.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. 여행을 마치며: 씻겨 내려가는 기분</h2>
+      <p>
+        나이아가라는 도시 전체가 폭포 하나로 살아 숨 쉬는 느낌이었다. 
+        식당에서 밥을 먹을 때도, 호텔 로비에 앉아 있을 때도 배경음악처럼 미세한 물소리가 깔려 있고, 공기 중에는 항상 촉촉한 수분감이 감돌았다.
+      </p>
+      <p>
+        미국 동부나 캐나다 여행을 계획 중이라면, 단순히 "교과서에 나오는 곳이니까 가봐야지"가 아니라, 
+        <strong>"내 안의 답답함을 씻어내러 간다"</strong>는 마음으로 들러보길 바란다.
+        끊임없이 낙하하는 그 거대한 물줄기를 멍하니 바라보는(일명 '물멍') 시간 동안, 
+        머릿속을 꽉 채우고 있던 잡념들이 물과 함께 씻겨 내려가는 놀라운 치유의 경험을 하게 될 것이다.
+      </p>
+
+      <div class="tag-list">
+        <span class="tag">#나이아가라폭포</span>
+        <span class="tag">#캐나다여행</span>
+        <span class="tag">#미국동부여행</span>
+        <span class="tag">#버킷리스트</span>
+        <span class="tag">#대자연</span>
+        <span class="tag">#혼블로워</span>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer>
+      <p>© 2025 Niagara Travel Log. All rights reserved.</p>
+      <p>직접 다녀오고 작성한 여행 기록입니다. 사진의 무단 도용을 금합니다.</p>
+    </footer>
+  </main>
+</body>
+</html>
