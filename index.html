@@ -204,6 +204,9 @@
       <div class="site-subtitle">
         북미 · 아시아 · 유럽의 대표 랜드마크들을 한 번에 둘러보는 여행 노트
       </div>
+<
+
+
       <nav>
         <div class="nav-links">
           <a href="#north-america">북미</a>
@@ -426,6 +429,140 @@
   </main>
 
   <footer>
+    <!-- 내 랜드마크 방문 체크 위젯 시작 -->
+<section id="visited-widget" style="max-width: 480px; margin: 3rem auto 2rem; padding: 1.2rem 1.4rem; border-radius: 14px; border: 1px solid #e5e7eb; background:#fafafa;">
+  <h3 style="margin:0 0 0.6rem; font-size:1.05rem; font-weight:700;">
+    ✅ 내가 가본 랜드마크
+  </h3>
+  <p style="margin:0 0 0.8rem; font-size:0.85rem; color:#555;">
+    아래 목록에서 가본 곳을 체크해 보세요. 다음에 사이트에 와도 기록이 유지돼요!
+  </p>
+
+  <!-- 진행률 표시 -->
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+    <span style="font-size:0.8rem; color:#444;">진행률</span>
+    <span id="visited-count-text" style="font-size:0.8rem; color:#111; font-weight:600;">0 / 9 (0%)</span>
+  </div>
+  <div style="width:100%; height:6px; border-radius:999px; background:#e5e7eb; overflow:hidden; margin-bottom:0.8rem;">
+    <div id="visited-progress-bar" style="height:100%; width:0%; background:#10b981;"></div>
+  </div>
+
+  <!-- 체크리스트 -->
+  <ul style="list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr 1fr; gap:0.35rem 0.9rem; font-size:0.8rem;">
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="statue_of_liberty" style="margin-right:0.25rem;">
+        자유의 여신상
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="grand_canyon" style="margin-right:0.25rem;">
+        그랜드 캐니언
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="niagara_falls" style="margin-right:0.25rem;">
+        나이아가라 폭포
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="gyeongbokgung" style="margin-right:0.25rem;">
+        경복궁
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="great_wall" style="margin-right:0.25rem;">
+        만리장성
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="tokyo_tower" style="margin-right:0.25rem;">
+        도쿄타워
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="eiffel_tower" style="margin-right:0.25rem;">
+        에펠탑
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="colosseum" style="margin-right:0.25rem;">
+        콜로세움
+      </label>
+    </li>
+    <li>
+      <label style="cursor:pointer;">
+        <input type="checkbox" class="visited-checkbox" value="sagrada_familia" style="margin-right:0.25rem;">
+        사그라다 파밀리아
+      </label>
+    </li>
+  </ul>
+</section>
+
+<script>
+  const VISITED_KEY = "visited_landmarks_v1";
+
+  function loadVisited() {
+    try {
+      const saved = localStorage.getItem(VISITED_KEY);
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveVisited(list) {
+    try {
+      localStorage.setItem(VISITED_KEY, JSON.stringify(list));
+    } catch (e) {
+      // localStorage 사용 불가한 환경은 그냥 무시
+    }
+  }
+
+  function updateVisitedUI() {
+    const checkboxes = document.querySelectorAll(".visited-checkbox");
+    const checked = Array.from(checkboxes).filter(cb => cb.checked);
+    const total = checkboxes.length;
+    const count = checked.length;
+    const percent = Math.round((count / total) * 100);
+
+    const textEl = document.getElementById("visited-count-text");
+    const barEl = document.getElementById("visited-progress-bar");
+
+    if (textEl) {
+      textEl.textContent = `${count} / ${total} (${percent}%)`;
+    }
+    if (barEl) {
+      barEl.style.width = percent + "%";
+    }
+
+    // 저장
+    const values = checked.map(cb => cb.value);
+    saveVisited(values);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const saved = loadVisited();
+    const checkboxes = document.querySelectorAll(".visited-checkbox");
+
+    checkboxes.forEach(cb => {
+      if (saved.includes(cb.value)) {
+        cb.checked = true;
+      }
+      cb.addEventListener("change", updateVisitedUI);
+    });
+
+    updateVisitedUI();
+  });
+</script>
+<!-- 내 랜드마크 방문 체크 위젯 끝 -->
     <div class="footer-inner">
       <span>© 2025 World Landmarks Travel Blog</span>
       <span>작성자: (조준희,김민성,하상연)</span>
