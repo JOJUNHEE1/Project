@@ -2,330 +2,350 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>사그라다 파밀리아 여행기 - 세계 랜드마크 블로그</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <title>사그라다 파밀리아 여행기 - 빛으로 채워진 바르셀로나 성당</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="바르셀로나 여행의 핵심, 사그라다 파밀리아 방문 후기와 볼거리, 내부·외관 포인트, 교통, 꿀팁까지 정리한 블로그 형식의 HTML 예시입니다." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", system-ui, sans-serif;
       line-height: 1.7;
-      background: #f5f5f7;
-      color: #111827;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #222;
     }
-    a { color: inherit; text-decoration: none; }
 
     header {
-      background: linear-gradient(120deg, #22c55e, #0ea5e9);
+      background: linear-gradient(135deg, #0ea5e9, #22c55e);
       color: #fff;
-      padding: 1.8rem 1.5rem 1.3rem;
-      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
-      margin-bottom: 1.5rem;
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
     }
-    .header-inner { max-width: 920px; margin: 0 auto; }
-    .site-title { font-size: 1.4rem; font-weight: 700; }
-    .breadcrumb {
-      margin-top: 0.45rem;
-      font-size: 0.85rem;
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.1rem;
+    }
+
+    header p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
       opacity: 0.9;
-    }
-    .breadcrumb a {
-      text-decoration: underline;
-      text-decoration-style: dotted;
     }
 
     main {
-      max-width: 920px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
     }
 
-    .hero {
-      background: #ffffff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      margin-bottom: 1.8rem;
-    }
     .hero-image {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56%;
-      overflow: hidden;
-    }
-    .hero-image img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      inset: 0;
-      filter: saturate(1.05);
-    }
-    .hero-body { padding: 1.2rem 1.4rem 1.4rem; }
-    .hero-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-    .hero-meta {
-  font-size: 0.88rem;
-  color: #ffffff;    
-  font-weight: 600;   /* 글씨 조금 더 두껍게 */
-}
-
-
-    article {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.4rem 1.5rem 1.6rem;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-    }
-
-    article h2 {
-      font-size: 1.25rem;
-      margin: 1.3rem 0 0.4rem;
-    }
-    article h2:first-of-type { margin-top: 0; }
-
-    article h3 {
-      font-size: 1.02rem;
-      margin: 0.8rem 0 0.3rem;
-      font-weight: 600;
-      color: #1f2937;
-    }
-
-    article p {
-      font-size: 0.96rem;
-      color: #374151;
-      margin-bottom: 0.75rem;
-    }
-
-    article ul {
-      margin: 0.3rem 0 0.9rem 1.1rem;
-      font-size: 0.95rem;
-      color: #374151;
-    }
-
-    .tip-box {
-      margin-top: 1rem;
-      padding: 0.9rem 1rem;
+      margin: 0 auto 2rem;
       border-radius: 12px;
-      background: #ecfeff;
-      border: 1px solid #7dd3fc;
-      font-size: 0.9rem;
-      color: #1f2937;
+      overflow: hidden;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
     }
-    .tip-box strong { display: block; margin-bottom: 0.2rem; }
 
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-top: 1.4rem;
+    .hero-image img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      border-left: 4px solid #0ea5e9;
+      padding-left: 0.7rem;
+    }
+
+    h3 {
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0.3rem 0 0.7rem;
+      font-size: 0.98rem;
+    }
+
+    ul, ol {
+      margin: 0.3rem 0 1rem 1.3rem;
+      font-size: 0.95rem;
+    }
+
+    .info-box {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+      margin: 1.5rem 0;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+    }
+
+    .tag-list {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      margin: 0 0.3rem 0.3rem 0;
+      border-radius: 999px;
+      background-color: #e0f2fe;
+      color: #0284c7;
+    }
+
+    .tip {
+      position: relative;
+      padding-left: 1.7rem;
+    }
+
+    .tip::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
+      color: #22c55e;
       font-size: 0.9rem;
-      color: #0ea5e9;
-      text-decoration: underline;
-      text-decoration-style: dotted;
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, #ecfeff 0%, #f0f9ff 100%);
+      padding: 0.3rem 0.35rem;
+      border-radius: 4px;
+    }
+
+    .divider {
+      margin: 2.5rem 0;
+      border-top: 1px dashed #ddd;
     }
 
     footer {
-      border-top: 1px solid #e5e7eb;
-      padding: 1rem 1.5rem 2rem;
-      background: #f9fafb;
-      font-size: 0.84rem;
-      color: #6b7280;
-      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem 1rem 2.5rem;
     }
-    .footer-inner {
-      max-width: 920px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+      header {
+        padding: 2.4rem 1rem 1.6rem;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      main {
+        padding: 1.8rem 1.1rem 2.4rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <div class="site-title">세계 랜드마크 기록 블로그</div>
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> ·
-        <a href="index.html#europe">유럽</a> ·
-        사그라다 파밀리아 여행기
-      </div>
+    <h1>사그라다 파밀리아 여행기 ⛪</h1>
+    <p>아직도 짓고 있는 성당, 빛과 기둥으로 채워진 바르셀로나의 심장</p>
+    <p>Sagrada Família Travel Log / 바르셀로나 성당 산책 기록</p>
+    <div class="breadcrumb">
+      <a href="index.html">홈</a> ·
+      <a href="index.html#europe">유럽</a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=80"
-                   alt="바르셀로나 사그라다 파밀리아 성당" />
-      </div>
-      <div class="hero-body">
-        <h1 class="hero-title">사그라다 파밀리아, 아직도 짓고 있는 바르셀로나의 심장</h1>
-        <div class="hero-meta">
-          스페인 · 바르셀로나 · Sagrada Família<br />
-          가우디가 남긴 미완의 대성당, 빛과 조각으로 채워진 도시의 상징
-        </div>
+    <div class="hero-image">
+      <!-- 이미지 파일 이름은 저장한 이름에 맞춰 수정해줘 (예: sagrada.jpg) -->
+      <img src="sagrada.jpg"
+           alt="바르셀로나 사그라다 파밀리아 전경" />
+    </div>
+
+    <section>
+      <h2>1. ‘미완성’이라 더 특별한 바르셀로나의 상징</h2>
+      <p>
+        바르셀로나를 떠올리면 가장 먼저 떠오르는 장소 중 하나가 바로 사그라다 파밀리아다.
+        <span class="highlight">지금도 공사가 진행 중인, 세계적으로 드문 ‘진행형 성당’</span>이라는 점만으로도
+        이미 충분히 인상적인 곳이지만, 실제로 눈앞에서 마주하면 생각보다 훨씬 거대하고 복잡한 구조에 한번 더 놀라게 된다.
+      </p>
+      <p>
+        사그라다 파밀리아는 가우디가 생애 후반을 거의 통째로 바칠 정도로 몰두했던 작품으로,
+        그는 성당이 완성되기 전에 세상을 떠났지만
+        이후 세대의 건축가들이 그의 설계와 모형을 바탕으로 공사를 이어오고 있다.
+        그래서 이곳을 방문하는 것은 단순히 완성된 건축물을 보는 것이 아니라,
+        <strong>한 도시가 세대에 걸쳐 이어가는 긴 프로젝트의 한 장면</strong>을 보고 있는 경험에 가깝다.
+      </p>
+
+      <div class="info-box">
+        <h3>⛪ 사그라다 파밀리아 기본 정보 한눈에 보기</h3>
+        <ul>
+          <li>위치: 스페인 바르셀로나, 에이샴플레(Eixample) 지구</li>
+          <li>건축가: 안토니 가우디(Antoni Gaudí)</li>
+          <li>양식: 가톨릭 대성당, 모더니즘 + 가우디 특유의 자연주의 양식</li>
+          <li>착공: 1882년경, 현재도 공사 진행 중</li>
+          <li>특징: 탄생·수난·영광 파사드, 나무 같은 기둥, 화려한 스테인드글라스, 종탑 전망</li>
+        </ul>
+        <p class="tag-list">
+          <span class="tag">#바르셀로나여행</span>
+          <span class="tag">#사그라다파밀리아</span>
+          <span class="tag">#가우디건축</span>
+          <span class="tag">#유럽성당</span>
+        </p>
       </div>
     </section>
 
-    <article>
-      <!-- 1. 개요와 역사 -->
-      <h2>1. ‘미완성’이어서 더 특별한 성당</h2>
+    <section>
+      <h2>2. 성당 외벽에서 읽는 성경 이야기 – 세 개의 파사드</h2>
       <p>
-        사그라다 파밀리아(성가족 대성당)는 바르셀로나를 대표하는 가톨릭 대성당으로,
-        19세기 후반에 착공해 지금까지도 공사가 이어지고 있는, 전 세계적으로 드문 ‘진행형 건축물’이다.
-        초기에 다른 건축가가 설계를 맡았지만, 곧 안토니 가우디가 설계를 이어받으면서
-        지금 우리가 알고 있는 독특한 모습으로 방향이 완전히 바뀌었다.
-      </p>
-      <p>
-        가우디는 생애 대부분을 사그라다 파밀리아에 바쳤고,
-        말년에는 아예 공사 현장 근처에서 지내며 설계와 시공에 몰두했다고 한다.
-        그는 성당 완공을 자신의 생애 안에 보지 못한다는 것을 알고 있었고,
-        그래서 이후 세대의 건축가들이 이어 갈 수 있도록
-        전체적인 구상과 모형, 도면들을 남기는 데 집중했다.
-      </p>
-      <p>
-        지금의 사그라다 파밀리아는 가우디의 오리지널 아이디어와
-        현대 기술·건축가들의 해석이 함께 섞인 결과물이다.
-        그래서 이곳을 방문하는 것은 ‘가우디의 작품’을 보는 동시에,
-        시간이 흐르면서 계속해서 변해 가는 한 도시의 프로젝트를 목격하는 경험이기도 하다.
+        멀리서 볼 때 사그라다 파밀리아는 거대한 돌산처럼 보이지만,
+        가까이 다가가면 수많은 인물, 동물, 식물, 상징들이 빼곡히 새겨져 있다는 걸 알 수 있다.
+        특히 <span class="highlight">탄생 · 수난 · 영광 파사드</span>라는 세 개의 주요 외벽은
+        각기 다른 분위기와 이야기를 담고 있어, 한 바퀴 둘러보는 것만으로도 꽤 많은 시간이 걸린다.
       </p>
 
-      <!-- 2. 외관과 파사드 -->
-      <h2>2. 외관에서 읽는 성경 이야기 – 세 개의 파사드</h2>
+      <h3>🌱 탄생의 파사드 – 따뜻하고 풍성한 조각들</h3>
       <p>
-        성당 외관은 멀리서 보면 거대한 돌산처럼 보이지만,
-        가까이 다가가면 수많은 인물과 동식물, 상징들이 촘촘하게 새겨져 있다는 것을 알게 된다.
-        특히 세 개의 주요 파사드(정면 외벽)는 각각 다른 성경 장면과 분위기를 담고 있다.
+        탄생의 파사드는 예수의 탄생과 관련된 장면을 중심으로 꾸며져 있다.
+        인물 조각들이 부드럽고 풍성한 느낌을 주며, 동물과 식물이 함께 어우러져
+        생명력 넘치는 분위기를 만든다.
+        가까이서 조각 하나하나를 보고 있으면, 돌이 아니라 살아 있는 장면을 보는 것 같은 느낌이 든다.
       </p>
 
-      <h3>2-1. 탄생의 파사드 – 따뜻하고 풍성한 조각</h3>
+      <h3>✝ 수난의 파사드 – 각지고 날카로운 선</h3>
       <p>
-        ‘탄생의 파사드’는 예수의 탄생과 관련된 장면을 중심으로 꾸며져 있다.
-        인물 조각들이 부드럽고 풍성한 느낌을 주며,
-        동물·식물 모티브가 곳곳에 배치되어 생명력 넘치는 분위기를 만든다.
-        바르셀로나의 푸른 하늘을 배경으로 이 파사드를 바라보고 있으면,
-        돌로 된 성당이라기보다 살아 있는 생명체를 보는 듯한 인상을 준다.
+        반대편에 위치한 수난의 파사드는 예수의 십자가형과 수난 과정을 표현한다.
+        조각의 선이 훨씬 더 각지고 날카롭고, 인물들의 표정도 긴장감이 강하게 느껴진다.
+        따뜻한 탄생의 파사드와는 정반대의 분위기라,
+        같은 성당 안에서도 감정의 온도가 바뀌는 경험을 하게 된다.
       </p>
 
-      <h3>2-2. 수난의 파사드 – 날카롭고 긴장감 있는 선</h3>
+      <h3>☀ 영광의 파사드 – 앞으로 완성될 미래의 얼굴</h3>
       <p>
-        반대편의 ‘수난의 파사드’는 예수가 십자가에 못 박히기까지의 과정을 표현하고 있다.
-        조각의 선들이 날카롭고 각져 있으며, 인물들의 표정과 자세에서도 긴장감이 느껴진다.
-        따뜻한 탄생의 파사드에 비해 훨씬 절제되고 차가운 인상을 주기 때문에,
-        두 파사드를 번갈아 보면 같은 성당 안에서도 감정의 온도가 얼마나 달라질 수 있는지 체감하게 된다.
+        영광의 파사드는 아직 공사가 계속 진행 중인 부분으로,
+        성당이 완공되었을 때 또 하나의 상징적인 얼굴이 될 예정이라고 한다.
+        지금은 공사 구조물과 함께 보게 되는 경우가 많지만,
+        오히려 그 덕분에 이 성당이 여전히 ‘현재진행형’이라는 사실이 더 잘 느껴진다.
       </p>
 
-      <h3>2-3. 영광의 파사드 – 아직 완성 중인 미래의 얼굴</h3>
-      <p>
-        ‘영광의 파사드’는 아직 공사가 진행 중인 부분으로,
-        완성되면 사그라다 파밀리아의 또 다른 상징적인 얼굴이 될 예정이라고 한다.
-        지금은 공사 구조물과 함께 보는 경우가 많지만,
-        오히려 그 모습 덕분에 “이 성당이 아직도 만들어지는 중”이라는 사실을 더 실감하게 된다.
-      </p>
+      <h3>📸 외관 감상 포인트</h3>
+      <ul>
+        <li>성당 앞 광장에서 전체 실루엣을 넓게 담아보기</li>
+        <li>탄생의 파사드 앞에서 조각 하나하나를 클로즈업해 보는 시간 갖기</li>
+        <li>수난의 파사드의 각진 조각들을 흑백 사진 느낌으로 찍어보기</li>
+      </ul>
+    </section>
 
-      <!-- 3. 내부와 빛 -->
+    <section>
       <h2>3. 내부에 들어서면 펼쳐지는 ‘빛의 숲’</h2>
       <p>
-        사그라다 파밀리아 내부는 가우디의 자연주의 건축 철학이 가장 잘 드러나는 공간이다.
-        기둥들은 곧게 위로 뻗어 올라가면서 가지처럼 갈라지고,
-        천장은 마치 숲 속에서 나뭇가지를 통해 본 하늘처럼 기하학적인 패턴으로 구성되어 있다.
-        단순히 ‘천장’이라기보다, 하나의 거대한 자연 구조물을 돌로 구현해 놓은 느낌에 가깝다.
+        사그라다 파밀리아의 내부는 가우디의 자연주의 건축 철학이 가장 강하게 드러나는 공간이다.
+        기둥들이 나무 줄기처럼 위로 뻗어 올라가고,
+        천장은 나뭇잎 사이로 보이는 하늘처럼 다각형 패턴으로 얽혀 있다.
+        <span class="highlight">“숲 속에 들어온 느낌”</span>이라는 표현이 과장이 아니게 느껴지는 순간이다.
       </p>
       <p>
-        스테인드글라스로 들어오는 빛도 이 성당의 중요한 요소다.
-        한쪽은 푸른 계열, 다른 한쪽은 노란·주황 계열의 색으로 꾸며져 있어
-        시간대와 햇빛의 방향에 따라 성당 내부의 분위기가 계속 변한다.
-        어떤 시간대에는 차분하고 서늘한 느낌이, 또 다른 시간대에는 따뜻하고 활기찬 느낌이 공간 안에 퍼진다.
+        양쪽 벽의 스테인드글라스는 색감이 다르게 배치되어 있어,
+        한쪽은 푸른빛과 초록빛, 다른 쪽은 노란·주황·붉은빛이 들어오도록 설계되어 있다.
+        시간대에 따라 빛이 들어오는 방향과 강도가 달라져,
+        성당 내부의 분위기도 계속 바뀌는 것이 인상적이다.
       </p>
 
-      <h3>3-1. 내부에서 눈여겨볼 포인트</h3>
-      <ul>
-        <li>나뭇가지처럼 갈라지는 기둥과 그 사이를 채우는 별 모양의 천장 구조</li>
-        <li>스테인드글라스를 통과한 빛이 벽과 바닥에 만드는 색의 그라데이션</li>
-        <li>중앙 제단과 파이프 오르간, 전통적인 성당 구조와 가우디식 해석의 조화</li>
-      </ul>
-
-      <div class="tip-box">
-        <strong>TIP · 내부 감상 팁</strong>
-        ✔ 사진을 찍는 것도 좋지만, 몇 분 정도는 카메라를 내려놓고 가만히 서서 천장과 빛만 바라보는 시간을 가져 보세요.<br />
-        ✔ 기둥과 천장, 스테인드글라스를 각각 따로 보는 것보다,
-        “숲 속 한가운데 서 있다”는 느낌으로 전체를 한 번에 느껴 보려고 하면 더 인상 깊습니다.
+      <div class="info-box">
+        <h3>💡 내부 감상 꿀팁</h3>
+        <p class="tip">입장 후 바로 사진부터 찍기보다, 중앙 통로에 잠시 서서 천장과 기둥, 빛을 눈으로만 감상해 보자.</p>
+        <p class="tip">오전과 오후에 빛이 들어오는 색감이 달라지므로, 원하는 분위기에 맞춰 시간대를 선택하는 것도 좋다.</p>
+        <p class="tip">내부는 비교적 조용한 편이니, 잠깐 벤치에 앉아 빛이 움직이는 것을 지켜보는 여유를 가져보자.</p>
       </div>
+    </section>
 
-      <!-- 4. 탑과 전망 -->
-      <h2>4. 종탑에 올라서 바라보는 바르셀로나</h2>
+    <section>
+      <h2>4. 종탑에 올라 바라보는 바르셀로나의 거리</h2>
       <p>
-        일정 티켓에는 종탑(타워)에 올라가는 옵션이 포함되어 있기도 하다.
-        좁은 엘리베이터와 계단을 통해 위로 올라가면,
-        바르셀로나 시내와 성당 외벽의 디테일을 동시에 가까이에서 볼 수 있다.
+        일부 티켓 옵션에는 사그라다 파밀리아 종탑(타워)에 올라가는 코스가 포함되어 있다.
+        엘리베이터와 좁은 계단을 통해 위로 올라가면,
+        성당 외벽의 디테일과 바르셀로나 시내 풍경을 동시에 가까이에서 볼 수 있다.
       </p>
       <p>
-        위에서 내려다보는 도시 풍경은 바다와 격자 모양으로 펼쳐진 바르셀로나의 거리 구조가 한눈에 들어오고,
-        아래를 내려다보면 공사 중인 성당의 일부, 외벽 조각들이 바로 옆에 보인다.
-        오래된 유산을 ‘관람’하는 것이 아니라,
-        지금도 계속 만들어지고 있는 거대한 프로젝트의 일부를 위에서 지켜보는 느낌이다.
+        위에서 내려다보면 격자처럼 뻗어 있는 바르셀로나의 거리 구조와
+        멀리 바다가 함께 들어오고,
+        성당 바로 옆으로는 공사 중인 구조물과 조각들이 손에 잡힐 듯 가까운 위치에 보인다.
+        <span class="highlight">완성된 유적을 “위에서 감상하는 것”이 아니라,
+        지금도 진행 중인 현장을 “함께 바라보는 느낌”</span>에 가깝다.
       </p>
 
-      <!-- 5. 관람 실전 팁 -->
-      <h2>5. 사그라다 파밀리아 관람 실전 팁</h2>
-      <p>
-        사그라다 파밀리아는 바르셀로나의 대표 관광지인 만큼, 늘 많은 사람들로 붐비는 곳이다.
-        조금만 준비해 가면 더 여유 있고 알차게 둘러볼 수 있다.
-      </p>
-
-      <h3>5-1. 방문 시간대 선택</h3>
+      <h3>🔭 타워에서 만나는 풍경 포인트</h3>
       <ul>
-        <li><strong>오전</strong> – 비교적 차분한 분위기, 한쪽 스테인드글라스 쪽으로 부드러운 빛이 들어옴</li>
-        <li><strong>오후</strong> – 다른 쪽 스테인드글라스에서 강렬한 주황·붉은빛이 들어와 화려한 색감을 볼 수 있음</li>
-        <li>빛을 중요하게 보고 싶다면, 해가 높이 떠 있는 시간대를 선택하는 편이 좋다.</li>
+        <li>바르셀로나 특유의 격자형 도로와 붉은 지붕들</li>
+        <li>멀리 지중해와 도시 스카이라인이 함께 들어오는 뷰</li>
+        <li>바로 옆에서 바라보는 사그라다 파밀리아의 외벽 조각과 첨탑 디테일</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 사그라다 파밀리아 가는 길 & 관람 실전 팁</h2>
+      <p>
+        사그라다 파밀리아는 바르셀로나 도심에 위치해 있어
+        대중교통으로 접근하기 쉽다. 단, 항상 관광객이 많은 곳이기 때문에
+        <span class="highlight">입장 시간과 티켓 예약</span>을 미리 신경 써두면 훨씬 여유로운 관람이 가능하다.
+      </p>
+
+      <h3>🚇 대표적인 접근 방법</h3>
+      <ul>
+        <li>바르셀로나 지하철 L2·L5 <strong>Sagrada Família역</strong> 하차 후 바로 도보 이동</li>
+        <li>시내 주요 광장(카탈루냐 광장 등)에서 버스 이용 후 도보 이동</li>
+        <li>가우디 투어 코스(구엘 공원, 카사 바트요 등)와 함께 하루 코스로 묶기</li>
       </ul>
 
-      <h3>5-2. 동선과 관람 포인트</h3>
+      <h3>🎫 티켓 & 동선 팁</h3>
       <ul>
-        <li>외관 한 바퀴를 천천히 돌며 각 파사드(탄생·수난·영광)의 차이를 비교해 보기</li>
-        <li>내부 입장 후, 중앙 통로에서 천장과 기둥 구조를 먼저 감상한 뒤 양쪽 측면으로 이동</li>
-        <li>기념품샵에서는 가우디의 다른 건축물들과 연결되는 디자인을 함께 살펴보면 재미있다.</li>
+        <li>현장 대기 줄이 길기 때문에, 온라인 사전 예약을 strongly 추천</li>
+        <li>“내부 + 오디오 가이드” 옵션을 이용하면, 조각과 구조의 의미를 이해하는 데 도움이 된다.</li>
+        <li>외관 → 내부 → 타워(선택 사항) → 주변 공원에서 외관 한 번 더 감상하는 동선이 가장 무난하다.</li>
       </ul>
+    </section>
 
-      <!-- 6. 마무리 인상 -->
-      <h2>6. ‘완성본’이 아니라 ‘과정’을 보러 가는 장소</h2>
+    <section>
+      <h2>6. ‘완성본’이 아니라 ‘과정’을 보러 가는 성당</h2>
       <p>
-        사그라다 파밀리아는 이미 수많은 사람들이 찾는 유명 관광지지만,
-        단순히 “예쁜 성당”을 보러 가는 곳이라기보다는
-        한 세기 넘게 이어져 온 도시의 꿈과 시간, 그리고 앞으로의 미래까지 담고 있는 장소에 가깝다.
+        사그라다 파밀리아는 화려한 겉모습 때문에 “예쁜 성당”으로만 기억되기 쉽지만,
+        조금만 자세히 들여다보면 <strong>시간과 세대가 겹겹이 쌓인, 진행 중인 이야기</strong>라는 점이 더 크게 다가온다.
+        지금 우리가 보는 모습은 최종 완성본이 아니라, 그 사이 어딘가의 장면이다.
       </p>
       <p>
-        언젠가 이 성당이 완전히 완성되는 날이 오더라도,
-        지금 우리가 보는 이 ‘중간 과정’의 모습은 다시는 똑같이 돌아오지 않을 것이다.
-        그래서 사그라다 파밀리아를 방문하는 것은,
-        하나의 완성된 건물이 아니라, 그 사이 어딘가의 장면을 눈과 마음에 기록해 두는 일인지도 모른다.
-      </p>
-      <p>
-        언젠가 바르셀로나를 다시 찾게 된다면,
-        “이번에는 어디까지 지어졌을까?” 하는 마음으로
-        또 한 번 사그라다 파밀리아 앞에 서 보고 싶다는 생각이 자연스럽게 들게 되는 곳이다.
+        그래서 이곳을 다녀온 많은 사람들이
+        “언젠가 완전히 완성된 모습을 다시 보러 오고 싶다”는 마음을 품게 된다.
+        사그라다 파밀리아는 한 번 체크하고 끝나는 관광지가 아니라,
+        <span class="highlight">언젠가 다시 왔을 때 얼마나 달라져 있을지 기대하게 만드는 장소</span>에 가깝다.
       </p>
 
-      <a class="back-link" href="index.html#europe">
-        ← 유럽 랜드마크 목록으로 돌아가기
-      </a>
-    </article>
+      <div class="info-box">
+        <h3>🔚 사그라다 파밀리아에서 남는 건 ‘빛 + 시간의 감각’</h3>
+        <p>
+          성당 안에서 스테인드글라스를 통과한 빛이 천천히 움직이는 모습을 보고 있다 보면,
+          현재의 시간과 과거의 설계, 미래의 완성을 향한 시간이 한 공간에 겹쳐 있는 느낌이 든다.
+        </p>
+        <p>
+          결국 나중에 이곳을 떠올릴 때 가장 먼저 떠오르는 것은
+          복잡한 조각의 디테일보다도,
+          그 빛 속에서 잠시 서 있었던 <strong>나 자신의 감정과 생각</strong>일지도 모른다.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer>
+      <p>© 2025 Barcelona Cathedral Travel Log. All rights reserved.</p>
+      <p>사그라다 파밀리아 · Sagrada Família ·</p>
+    </footer>
   </main>
-
-  <footer>
-    <div class="footer-inner">
-      <span>© 2025 World Landmarks Travel Blog</span>
-      <span>작성자: (닉네임)</span>
-    </div>
-  </footer>
 </body>
 </html>
