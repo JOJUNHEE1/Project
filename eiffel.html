@@ -2,357 +2,366 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>에펠탑 여행기 - 세계 랜드마크 블로그</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <title>에펠탑 여행기 - 파리 하늘 위 철제 레이스</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="파리 여행의 핵심, 에펠탑 방문 후기와 볼거리, 사진 스팟, 전망대, 교통, 꿀팁까지 정리한 블로그 형식의 HTML 예시입니다." />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", system-ui, sans-serif;
       line-height: 1.7;
-      background: #f5f5f7;
-      color: #111827;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #222;
     }
-    a { color: inherit; text-decoration: none; }
 
     header {
-      background: linear-gradient(120deg, #ec4899, #8b5cf6);
+      background: linear-gradient(135deg, #ec4899, #6366f1);
       color: #fff;
-      padding: 1.8rem 1.5rem 1.3rem;
-      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.3);
-      margin-bottom: 1.5rem;
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
     }
-    .header-inner { max-width: 920px; margin: 0 auto; }
-    .site-title { font-size: 1.4rem; font-weight: 700; }
-    .breadcrumb {
-      margin-top: 0.45rem;
-      font-size: 0.85rem;
+
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.1rem;
+    }
+
+    header p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
       opacity: 0.9;
-    }
-    .breadcrumb a {
-      text-decoration: underline;
-      text-decoration-style: dotted;
     }
 
     main {
-      max-width: 920px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
     }
 
-    .hero {
-      background: #ffffff;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      margin-bottom: 1.8rem;
-    }
     .hero-image {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56%;
-      overflow: hidden;
-    }
-    .hero-image img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      inset: 0;
-      filter: saturate(1.1);
-    }
-    .hero-body { padding: 1.2rem 1.4rem 1.4rem; }
-    .hero-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-    .hero-meta {
-      font-size: 0.88rem;
-      color: #6b7280;
-    }
-
-    article {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.4rem 1.5rem 1.6rem;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      border: 1px solid rgba(148, 163, 184, 0.35);
-    }
-
-    article h2 {
-      font-size: 1.25rem;
-      margin: 1.3rem 0 0.4rem;
-    }
-    article h2:first-of-type { margin-top: 0; }
-
-    article h3 {
-      font-size: 1.02rem;
-      margin: 0.9rem 0 0.35rem;
-      font-weight: 600;
-      color: #1f2937;
-    }
-
-    article p {
-      font-size: 0.96rem;
-      color: #374151;
-      margin-bottom: 0.75rem;
-    }
-
-    article ul {
-      margin: 0.3rem 0 0.9rem 1.1rem;
-      font-size: 0.95rem;
-      color: #374151;
-    }
-
-    .tip-box {
-      margin-top: 1rem;
-      padding: 0.9rem 1rem;
+      margin: 0 auto 2rem;
       border-radius: 12px;
-      background: #fdf2ff;
-      border: 1px solid #f9a8d4;
-      font-size: 0.9rem;
-      color: #1f2937;
+      overflow: hidden;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
     }
-    .tip-box strong { display: block; margin-bottom: 0.2rem; }
 
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      margin-top: 1.4rem;
-      font-size: 0.9rem;
+    .hero-image img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      border-left: 4px solid #ec4899;
+      padding-left: 0.7rem;
+    }
+
+    h3 {
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0.3rem 0 0.7rem;
+      font-size: 0.98rem;
+    }
+
+    ul, ol {
+      margin: 0.3rem 0 1rem 1.3rem;
+      font-size: 0.95rem;
+    }
+
+    .info-box {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+      margin: 1.5rem 0;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+    }
+
+    .tag-list {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      margin: 0 0.3rem 0.3rem 0;
+      border-radius: 999px;
+      background-color: #fee2f2;
+      color: #db2777;
+    }
+
+    .tip {
+      position: relative;
+      padding-left: 1.7rem;
+    }
+
+    .tip::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0.1rem;
       color: #ec4899;
-      text-decoration: underline;
-      text-decoration-style: dotted;
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, #fdf2ff 0%, #eff6ff 100%);
+      padding: 0.3rem 0.35rem;
+      border-radius: 4px;
+    }
+
+    .divider {
+      margin: 2.5rem 0;
+      border-top: 1px dashed #ddd;
     }
 
     footer {
-      border-top: 1px solid #e5e7eb;
-      padding: 1rem 1.5rem 2rem;
-      background: #f9fafb;
-      font-size: 0.84rem;
-      color: #6b7280;
-      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem 1rem 2.5rem;
     }
-    .footer-inner {
-      max-width: 920px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+      header {
+        padding: 2.4rem 1rem 1.6rem;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      main {
+        padding: 1.8rem 1.1rem 2.4rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <div class="site-title">세계 랜드마크 기록 블로그</div>
-      <div class="breadcrumb">
-        <a href="index.html">홈</a> ·
-        <a href="index.html#europe">유럽</a> ·
-        에펠탑 여행기
-      </div>
+    <h1>에펠탑 여행기 🗼</h1>
+    <p>파리 하늘을 찌르는 철제 레이스 위에서 바라본 도시의 심장</p>
+    <p>Eiffel Tower Travel Log / 파리 랜드마크 산책 기록</p>
+    <div class="breadcrumb">
+      <a href="index.html">홈</a> ·
+      <a href="index.html#europe">유럽</a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80"
-             alt="파리 에펠탑 전경" />
-      </div>
-      <div class="hero-body">
-        <h1 class="hero-title">에펠탑 여행기</h1>
-        <div class="hero-meta">
-          빛의 도시 한가운데 솟은 철제 레이스, 파리의 심장을 보다<br />
-          프랑스 · 파리 · Eiffel Tower · 작성일: 2025-12-03 · 태그: 파리, 야경, 로맨스, 유럽
-        </div>
+    <div class="hero-image">
+      <!-- 이미지 파일 이름은 실제 저장한 이름에 맞게 수정 (예: eiffel.jpg) -->
+      <img src="eiffel.jpg"
+           alt="파리 에펠탑 전경" />
+    </div>
+
+    <section>
+      <h2>1. 멀리서 보던 실루엣을 눈앞에서 마주하는 순간</h2>
+      <p>
+        사진이나 영화 속에서 수없이 보던 에펠탑은, 막상 실제로 마주하면
+        <span class="highlight">생각보다 훨씬 크고, 생각보다 훨씬 섬세한 구조물</span>이라는 걸 먼저 깨닫게 된다.
+        센 강변을 따라 걷다가 골목을 하나 돌면, 도시 위로 쑥 솟아 있는 철제 실루엣이 시야 한가운데 들어온다.
+      </p>
+      <p>
+        에펠탑은 1889년 파리 만국박람회를 위해 세워진 철골 탑으로,
+        당시에는 “보기 흉하다”는 비난도 많이 받았지만 지금은
+        <strong>“파리에 왔다”는 사실을 가장 직관적으로 증명해 주는 랜드마크</strong>가 되었다.
+        낮과 밤, 맑은 날과 흐린 날, 계절에 따라 완전히 다른 분위기를 보여주는 것도 에펠탑의 매력이다.
+      </p>
+
+      <div class="info-box">
+        <h3>🗼 에펠탑 기본 정보 한눈에 보기</h3>
+        <ul>
+          <li>위치: 프랑스 파리, 샹드 마르스(Champ de Mars) 공원 인근</li>
+          <li>완공: 1889년 파리 만국박람회(World’s Fair)를 위해 건설</li>
+          <li>높이: 약 300m, 안테나 포함 시 약 330m 내외</li>
+          <li>층 구성: 1층, 2층, 최상층(3층 전망대)</li>
+          <li>특징: 철제 격자 구조, 탁 트인 파리 파노라마 전망, 야간 조명 쇼</li>
+        </ul>
+        <p class="tag-list">
+          <span class="tag">#파리여행</span>
+          <span class="tag">#에펠탑</span>
+          <span class="tag">#야경스폿</span>
+          <span class="tag">#유럽랜드마크</span>
+        </p>
       </div>
     </section>
 
-    <article>
-      <!-- 1 -->
-      <h2>1. 파리 하늘에 그려진 철제 연필 한 자루</h2>
+    <section>
+      <h2>2. 샹드 마르스 공원에서 탑 아래까지, 접근 동선 따라 걷기</h2>
       <p>
-        센 강을 따라 걷다 보면, 어느 순간 시야 한가운데 가느다란 철골이 하늘을 찌르듯 올라와 있다.
-        멀리서 볼 때는 그냥 ‘파리의 상징’ 중 하나 같지만, 가까이 다가갈수록 구조물의 디테일과 압도적인 크기에
-        한 번, 그 아래를 지나며 고개를 끝까지 젖히게 되는 자신에게 또 한 번 놀라게 된다.
+        에펠탑을 즐기는 가장 기본적인 방법은
+        <span class="highlight">샹드 마르스 공원을 가로질러 탑 쪽으로 천천히 걸어가는 것</span>이다.
+        잔디밭과 나무들 사이로 탑의 상단이 점점 커지면서, “아, 진짜 파리에 있구나” 하는 실감이 서서히 밀려온다.
       </p>
       <p>
-        처음 지어졌을 땐 ‘흉물스럽다’는 비난을 들었던 철탑이, 지금은 ‘파리에 왔다’는 사실을
-        가장 직관적으로 증명해 주는 랜드마크가 된 셈이다. 낮에는 강과 도시 풍경의 중심축이 되고,
-        밤에는 황금빛 조명과 반짝이는 일루미네이션 쇼로 또 다른 파리의 얼굴을 보여준다.
+        탑 바로 아래에 서면 네 개의 기둥이 거대한 아치를 만들고 있고,
+        철골이 격자 모양으로 얽혀 있는 구조가 머리 위를 가득 채운다.
+        엘리베이터를 기다리는 사람들 사이에 서 있으면,
+        이곳이 공학 구조물인지 예술 작품인지 잠시 헷갈리는 순간이 온다.
       </p>
 
-      <h3>에펠탑 기본 정보 한눈에 보기</h3>
+      <h3>📸 탑 주변 포토 스폿</h3>
       <ul>
-        <li>위치: 프랑스 파리 7구 샹드 마르스(Champ de Mars), 세느강 인근</li>
-        <li>완공: 1889년 파리 만국박람회(World’s Fair)를 위해 건설</li>
-        <li>높이: 안테나 포함 약 330m 내외(시기·개보수에 따라 약간씩 변동)</li>
-        <li>층 구성: 1층, 2층, 최상층(3층 전망대)</li>
-        <li>주요 기능: 전망대, 레스토랑, 라운지, 기념품숍, 각종 행사·조명 연출</li>
-        <li>특징: 도시 한복판에서 360° 파노라마 뷰를 즐길 수 있는 대표 철골 구조물</li>
+        <li>샹드 마르스 공원 끝에서 탑을 정면으로 두고 담는 전형적인 ‘엽서 사진’</li>
+        <li>탑 바로 아래에서 대각선으로 올려다본 철골 디테일 샷</li>
+        <li>옆 골목이나 다리 위에서 살짝 비껴 찍는, 일상 속 에펠탑 느낌의 사진</li>
+        <li>노을이 지는 타이밍에 하늘 색과 함께 담는 실루엣 사진</li>
       </ul>
+    </section>
 
-      <p>#Paris #EiffelTower #파리여행 #유럽감성</p>
-
-      <!-- 2 -->
-      <h2>2. 샹드 마르스를 지나 철제 아치 아래까지, 첫 만남의 동선</h2>
+    <section>
+      <h2>3. 1·2층 전망대 – 파리 도시 구조를 한눈에 보는 높이</h2>
       <p>
-        에펠탑을 제대로 느끼고 싶다면, 지하철역에서 바로 올라가 탑 아래로 직행하는 동선보다
-        샹드 마르스 공원을 천천히 가로질러 가는 길을 추천하고 싶다.
-        잔디밭과 나무 사이로 탑의 상단이 조금씩 커지면서, ‘아, 진짜 파리에 있구나’ 하는 실감이 서서히 밀려온다.
-      </p>
-      <p>
-        탑 바로 아래까지 가면 네 개의 거대한 기둥과 그 사이를 엮는 철제 구조물이 머리 위로 거대한 아치를 만든다.
-        엘리베이터를 타기 위해 줄을 서 있는 사람들 사이에 서 있으면,
-        이 구조물이 기술의 산물인지, 아니면 거대한 예술 작품인지 잠시 헷갈리기도 한다.
+        엘리베이터를 타고 1층과 2층 전망대에 오르면,
+        이제 “높다”는 감각보다 <span class="highlight">“파리가 한 장의 지도처럼 펼쳐진다”</span>는 느낌이 먼저 온다.
+        세느강과 다리들, 낮은 건물들이 이어지는 파리 특유의 스카이라인이 한눈에 들어온다.
       </p>
 
-      <h3>탑 주변 포토 스폿</h3>
+      <h3>1층 – 구조와 공간을 함께 느끼는 구간</h3>
+      <p>
+        1층은 높이 자체보다는, 에펠탑의 구조를 가까이서 느껴보기 좋은 층이다.
+        일부 구간에는 바닥이 유리로 되어 있어 발 아래로 사람들이 움직이는 모습이 보이는데,
+        생각보다 꽤 아찔해서 한 번쯤은 용기 내서 걸어보게 된다.
+      </p>
+
+      <h3>2층 – 가장 ‘파리다운’ 뷰가 나오는 층</h3>
+      <p>
+        많은 사람들이 “사진이 가장 잘 나오는 위치”로 꼽는 곳이 2층 전망대다.
+        세느강, 트로카데로, 개선문 방향으로 뻗어가는 거리들이 함께 들어오고,
+        파리의 건물 높이가 전체적으로 낮아서 멀리까지 탁 트인 느낌을 준다.
+      </p>
+
+      <h3>🔭 전망대 감상 포인트</h3>
       <ul>
-        <li>샹드 마르스 공원 쪽에서 탑을 정중앙에 두고 찍는 전형적인 ‘엽서 사진’</li>
-        <li>트로카데로(Trocadéro) 광장 계단 위에서 파리 시내와 함께 담는 전경샷</li>
-        <li>탑 바로 아래에서 대각선으로 올려다보는 철골 디테일 사진</li>
-        <li>해질 무렵, 노을빛 하늘과 점등된 에펠탑이 함께 들어오는 타이밍</li>
+        <li>망원경으로 몽마르트 언덕, 사크레쾨르 대성당 등 랜드마크 찾아보기</li>
+        <li>강을 따라 천천히 시선을 옮기며, 도시의 구조를 눈으로 따라가 보기</li>
+        <li>사진을 찍은 뒤에는, 잠깐 카메라를 내려놓고 바람과 소리를 느껴보기</li>
       </ul>
+    </section>
 
-      <div class="tip-box">
-        <strong>TIP · 사진 잘 찍히는 시간대</strong>
-        해질 무렵(골든 아워)부터 완전히 어두워지기 직전까지가
-        에펠탑과 하늘 색이 가장 예쁘게 겹치는 시간대입니다.
-        트로카데로 쪽에서 전체 실루엣을 먼저 찍고, 이후 탑 아래로 이동해 디테일 샷을 남겨 보세요.
+    <section>
+      <h2>4. 최상층(3층)에서 마주하는, 하늘과 도시의 경계</h2>
+      <p>
+        최상층(3층) 전망대에 오르면, 이제는 “도시 위에 떠 있는 작은 플랫폼”에 서 있는 느낌이 든다.
+        아래를 내려다보면 건물들이 장난감처럼 작게 느껴지고,
+        바람 소리와 사람들의 목소리가 뒤섞여 묘한 고요함을 만든다.
+      </p>
+      <p>
+        해질 무렵에 올라가면, 파리의 지붕들이 주황빛에서 보랏빛으로 서서히 물들고,
+        세느강에는 가느다란 빛줄기가 하나둘 켜지기 시작한다.
+        완전히 어두워질 때, 도시 전체가 불빛으로 반짝이는 장면은
+        파리 여행에서 쉽게 잊히지 않는 기억으로 남는다.
+      </p>
+
+      <h3>⭐ 최상층에서 즐기는 순간</h3>
+      <ul>
+        <li>“내가 지금 파리의 상징 위에 서 있다”는 감각을 잠시 천천히 만끽해 보기</li>
+        <li>핸드폰 줌을 너무 당기기보다는, 넓은 풍경 자체를 담는 사진 시도하기</li>
+        <li>같이 간 사람과 “다음에 또 오게 된다면 언제쯤일까?” 이야기 나눠보기</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 밤이 되면 시작되는 두 번째 여행 – 조명과 일루미네이션 쇼</h2>
+      <p>
+        해가 완전히 지고 나면, 에펠탑은 철제 구조물에서
+        <span class="highlight">황금빛 조명을 두른 거대한 조형물</span>로 성격이 바뀐다.
+        일정 시간마다 짧게 시작되는 반짝이는 조명 쇼가 시작되면,
+        주변에 있던 사람들 모두가 동시에 하늘을 향해 카메라를 들이대는 진풍경이 펼쳐진다.
+      </p>
+      <p>
+        탑 바로 아래에서 올려다보는 야간 에펠탑도 멋지지만,
+        강 건너 트로카데로 광장이나 세느강 변에서 조금 거리를 두고 바라보면
+        전체 실루엣과 반짝이는 조명의 느낌이 더 잘 살아난다.
+      </p>
+
+      <div class="info-box">
+        <h3>🌙 야간 감상 꿀팁</h3>
+        <p class="tip">일루미네이션 시작 시간에 맞춰 트로카데로 쪽으로 이동해, 전체 뷰를 한 번에 담아보자.</p>
+        <p class="tip">유람선이 지나갈 때 에펠탑과 함께 한 프레임에 들어오도록 타이밍을 맞춰 사진을 찍어보는 것도 재미있다.</p>
+        <p class="tip">사진을 충분히 찍었다면, 몇 분 정도는 카메라를 내려놓고 조명이 꺼질 때까지 눈으로만 바라보는 시간을 가져보자.</p>
       </div>
+    </section>
 
-      <!-- 3 -->
-      <h2>3. 1·2층 전망대에서 내려다보는 파리, 일상과 강이 엮이는 풍경</h2>
+    <section>
+      <h2>6. 에펠탑 가는 길 & 파리 여행 동선 속에 넣는 법</h2>
       <p>
-        엘리베이터를 타고 1층과 2층 전망대에 오르면, ‘높다’는 감각보다
-        ‘파리가 한 장의 지도처럼 펼쳐진다’는 느낌이 먼저 온다.
-        규칙적으로 뻗은 거리, 세느강을 가로지르는 다리들, 눈에 익은 건축물들이 한눈에 들어온다.
+        에펠탑은 파리 도심 안에서도 접근성이 좋은 편이라,
+        다른 명소들과 함께 하루 코스로 묶기 좋다.
+        교통을 잘 활용하면 생각보다 복잡하지 않게 방문할 수 있다.
       </p>
 
-      <h3>3-1. 1층 – 구조와 공간을 함께 느끼는 구간</h3>
-      <p>
-        1층은 높이 자체가 아주 극적이진 않지만, 탑의 구조를 한 번 더 체감할 수 있는 곳이다.
-        일부 구간에는 바닥이 유리로 되어 있어, 발 아래로 사람들이 움직이는 모습이 내려다보인다.
-        생각보다 스릴이 있어 한 번쯤 걸어보게 된다.
-      </p>
+      <h3>🚇 대표적인 접근 방법</h3>
       <ul>
-        <li>유리 바닥 위에서 아래를 내려다보며 사진 찍기</li>
-        <li>내부 전시 패널을 통해 에펠탑의 역사·설계에 대해 간단히 읽어보기</li>
-        <li>1층 테라스에서 샹드 마르스 방향 풍경 감상</li>
+        <li>메트로 6호선 <strong>Bir-Hakeim역</strong> 하차 후, 세느강 방향으로 도보 이동</li>
+        <li>RER C선 <strong>Champ de Mars – Tour Eiffel역</strong> 하차 후, 탑 방향으로 도보 이동</li>
+        <li>트로카데로 광장에서 전경을 먼저 보고, 다리를 건너 탑 아래로 내려가는 동선</li>
       </ul>
 
-      <h3>3-2. 2층 – 파리 스카이라인이 가장 균형 잡히는 뷰</h3>
-      <p>
-        2층은 높이와 시야가 균형을 이루는 구간이라, 많은 사람들이
-        ‘가장 사진이 잘 나온다’고 느끼는 층이다.
-        세느강과 트로카데로, 개선문 방향으로 뻗어가는 거리들이 함께 들어와
-        파리 특유의 도시 구성이 잘 드러난다.
-      </p>
+      <h3>🗺 추천 동선 예시</h3>
       <ul>
-        <li>광각으로 도시 전체를 담는 파노라마 촬영</li>
-        <li>망원경으로 몽마르트 언덕, 사크레쾨르 대성당 등 특정 스폿 찾기</li>
-        <li>바람이 강한 날에는 난간에 몸을 살짝 기대고 도시의 소리를 들어보기</li>
+        <li>오전: 루브르 박물관 · 튈르리 정원 산책</li>
+        <li>오후: 샹젤리제 거리 · 개선문 → 에펠탑 인근 이동</li>
+        <li>저녁: 에펠탑 주변 산책 & 야간 조명 감상, 세느강 유람선 탑승 선택</li>
       </ul>
 
-      <!-- 4 -->
-      <h2>4. 최상층(3층)에서 마주하는, 파리와 하늘의 경계</h2>
       <p>
-        더 위로 올라가 최상층 전망대에 서면, 이제는 ‘도시 감상’을 넘어서
-        ‘하늘에 떠 있는 플랫폼’에 가까운 느낌이 든다.
-        아래를 내려다보면 건물들이 장난감처럼 작게 느껴지고, 바람 소리가 한층 더 거세게 들린다.
+        특히 해 질 무렵부터 밤까지의 시간을 에펠탑 주변에 배치하면,
+        <span class="highlight">낮의 풍경과 밤의 야경을 모두 볼 수 있는 효율적인 구성</span>이 된다.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 에펠탑을 ‘한 번이 아니라 두세 번 다시 찾게 되는 곳’으로 만드는 것</h2>
+      <p>
+        에펠탑은 “체크해야 하는 관광지”이기도 하지만,
+        동시에 <strong>다른 시간대와 계절에 다시 찾아가 보고 싶은 장소</strong>이기도 하다.
+        맑은 낮, 흐린 날, 비 오는 날, 겨울 밤의 에펠탑은 각각 완전히 다른 인상을 준다.
       </p>
       <p>
-        해질 무렵에 올라가면, 파리의 지붕들이 서서히 주황빛에서 보랏빛으로 바뀌고,
-        세느강엔 가늘게 불빛이 켜지기 시작한다.
-        완전히 어두워질 무렵, 도시 전체가 반짝이는 조명들로 가득 찰 때,
-        그 가운데 에펠탑 자신도 황금빛으로 빛나고 있다는 걸 깨닫게 된다.
+        그래서 파리에 여러 번 오는 사람들 중에는
+        “그래도 한 번쯤은 에펠탑 앞을 지나가야 여행이 끝난 느낌이 든다”고 말하는 사람도 많다.
+        에펠탑은 단지 높고 유명한 탑이 아니라,
+        <span class="highlight">파리에서의 시간과 감정을 다시 불러내는 일종의 ‘기억 장치’</span> 같은 곳일지도 모른다.
       </p>
 
-      <!-- 5 -->
-      <h2>5. 에펠탑 조명과 일루미네이션 쇼, 밤이 되면 시작되는 두 번째 여행</h2>
-      <p>
-        해가 완전히 지고 나면, 에펠탑은 ‘철골 구조물’에서 ‘빛나는 조형물’로 성격이 바뀐다.
-        매 정시마다 잠깐씩 반짝이는 일루미네이션 쇼가 시작되면,
-        주변 사람들 모두가 동시에 스마트폰을 들고 하늘을 향해 들이대는 진풍경이 펼쳐진다.
-      </p>
-      <p>
-        조명이 켜진 에펠탑은 멀리서 보는 것만으로도 충분히 인상적이지만,
-        조금 거리를 두고 강 건너 트로카데로 쪽에서 바라보면
-        전체 실루엣과 빛의 반짝임이 더 잘 드러난다.
-      </p>
+      <div class="info-box">
+        <h3>🔚 에펠탑에서 남는 건 ‘풍경 + 그 순간의 감정’</h3>
+        <p>
+          나중에 에펠탑을 떠올릴 때,
+          정확한 층수나 높이보다 먼저 떠오르는 것은
+          탑 아래에서 올려다보던 목의 뻐근함, 전망대에서 불어오던 바람,
+          그리고 곁에 있던 사람들과 나누었던 짧은 대화일 것이다.
+        </p>
+        <p>
+          결국 에펠탑 여행의 핵심은,
+          파리 하늘 아래 그 철제 구조물과 마주 서 있던
+          <strong>나 자신의 분위기와 마음 상태를 기억하는 것</strong>에 가까운지도 모른다.
+        </p>
+      </div>
+    </section>
 
-      <h3>야간 감상 팁</h3>
-      <ul>
-        <li>일루미네이션 시간에 맞춰 트로카데로 광장 계단이나 세느강 변으로 이동하기</li>
-        <li>강가에서 유람선이 지나갈 때를 기다렸다가, 에펠탑과 유람선이 함께 들어오는 구도로 찍어보기</li>
-        <li>사진에만 집중하기보다, 조명이 꺼질 때까지 눈으로만 조용히 바라보는 시간도 가져보기</li>
-      </ul>
+    <div class="divider"></div>
 
-      <!-- 6 -->
-      <h2>6. 에펠탑 가는 길 & 주변 동선 추천</h2>
-      <p>
-        에펠탑은 파리 도심 안에서도 이동이 쉬운 편이라,
-        다른 명소들과 코스를 묶어 하루 일정으로 구성하기 좋다.
-      </p>
-
-      <h3>대표적인 접근 방법</h3>
-      <ul>
-        <li>지하철 6호선 Bir-Hakeim 역 하차 후 세느강 방향으로 도보 이동</li>
-        <li>RER C선 Champ de Mars – Tour Eiffel 역 하차 후 탑 방향으로 이동</li>
-        <li>트로카데로 광장에서 전경을 본 뒤, 다리를 건너 탑 아래로 내려가는 동선</li>
-      </ul>
-
-      <h3>함께 묶기 좋은 파리 도심 코스</h3>
-      <ul>
-        <li>오전: 에펠탑 – 샹드 마르스 산책</li>
-        <li>점심: 근처 카페·브라스리에서 간단한 식사</li>
-        <li>오후: 세느강 유람선(바토 무슈 등) 탑승 혹은 샹젤리제·개선문 방향으로 이동</li>
-      </ul>
-
-      <!-- 7 -->
-      <h2>7. 에펠탑을 ‘두세 번쯤 다시 찾게 되는 곳’으로 만드는 포인트</h2>
-      <p>
-        에펠탑은 ‘체크해야 하는 관광지’라기보다,
-        다른 시간대와 계절에 다시 올 때마다 조금씩 다른 인상을 주는 장소에 가깝다.
-        맑은 낮에 보는 탑과 비 오는 날 구름을 뚫고 서 있는 탑,
-        눈이 살짝 쌓인 겨울 밤의 탑은 각각 완전히 다른 분위기를 만든다.
-      </p>
-
-      <h3>에펠탑에서 남는 건 ‘풍경 + 순간의 감정’</h3>
-      <p>
-        처음 올라가서 파리 전경을 내려다보는 순간의 설렘,
-        해질 무렵 도시가 색을 바꿔 가는 걸 바라보는 시간,
-        밤에 조명이 켜진 탑을 강 건너에서 조용히 바라보는 몇 분.
-      </p>
-      <p>
-        결국 나중에 기억 속에 남는 건 ‘몇 미터 높이였는지’가 아니라,
-        그 순간 어떤 마음으로 그 풍경을 바라보고 있었는지에 더 가깝다.
-        그래서 에펠탑은, 언젠가 다시 파리에 오게 되었을 때
-        또 한 번 들르게 되는 장소가 되기 쉽다.
-      </p>
-      <p>
-        처음에는 관광객의 시선으로, 다음에는 조금 더 느긋한 산책자의 마음으로,
-        그리고 언젠가는 ‘익숙한 친구’를 보러 가는 것처럼 말이다.
-      </p>
-
-      <a class="back-link" href="index.html#europe">
-        ← 유럽 랜드마크 목록으로 돌아가기
-      </a>
-    </article>
+    <footer>
+      <p>© 2025 Paris Landmark Travel Log. All rights reserved.</p>
+      <p>에펠탑 · Eiffel Tower ·</p>
+    </footer>
   </main>
-
-  <footer>
-    <div class="footer-inner">
-      <span>© 2025 World Landmarks Travel Blog</span>
-      <span>작성자: (닉네임)</span>
-    </div>
-  </footer>
 </body>
 </html>
